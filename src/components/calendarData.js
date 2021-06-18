@@ -6,16 +6,18 @@ const categories = [
   "Break",
   "Reception",
 ];
+
 const colors = [
+  "#CD3E41",
+  "#CF7E3E",
+  "#267E7B",
+  "#38A832",
   "#AF1F23",
   "#B1601F",
   "#136B68",
   "#1F8F19",
-  "#640003",
-  "#652D00",
-  "#003D3B",
-  "#045200",
 ];
+
 let contributedPapersCount = 1;
 let cognateSocietiesCount = 1;
 let symposiaCount = 1;
@@ -28,11 +30,13 @@ class Event {
     this.color = colors[type];
     this.category = categories[type];
     this.timed = timed;
+    this.details = details || "Details TBD";
     this.sessions = sessions;
     this.papers = papers;
     this.papersPerSession =
-      this.sessions && this.papers ? this.sessions / this.papers : null;
-    this.details = details || "Details TBD";
+      this.sessions && this.papers
+        ? Math.round(this.papers / this.sessions)
+        : null;
   }
 }
 
@@ -78,7 +82,7 @@ export const calData = [
     true,
     null,
     10,
-    3
+    30
   ),
   new Event(
     4,

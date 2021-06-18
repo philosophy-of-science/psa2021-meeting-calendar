@@ -51,21 +51,31 @@
               <v-toolbar :color="selectedEvent.color" dark>
                 <v-toolbar-title v-html="selectedEvent.name"></v-toolbar-title>
                 <v-spacer></v-spacer>
+                <p class="mb-0 text-body-2 text-uppercase d-flex align-center">
+                  <v-icon small class="mr-1">mdi-shape-outline</v-icon
+                  >{{ selectedEvent.category }}
+                </p>
               </v-toolbar>
               <v-card-text>
                 <p v-if="selectedEvent.sessions" class="d-flex align-center">
                   <v-icon class="mr-1">mdi-projector-screen-outline</v-icon
-                  >{{ padNum(selectedEvent.sessions) }}
+                  >{{ padNum(selectedEvent.sessions) }} Sessions
                 </p>
                 <p v-if="selectedEvent.papers" class="d-flex align-center">
-                  <v-icon class="mr-1">mdi-file-document-outline</v-icon>
-                  {{ padNum(selectedEvent.papers) }}
+                  <v-icon class="mr-1"
+                    >mdi-file-document-multiple-outline</v-icon
+                  >
+                  {{ padNum(selectedEvent.papers) }} Total Papers
                 </p>
-                <p v-if="selectedEvent.papersPerSession"></p>
-                <span v-html="selectedEvent.details"
-                  ><v-icon class="mr-1">mdi-file-document-outline</v-icon>
-                  {{ padNum(selectedEvent.papersPerSession) }}</span
+                <p
+                  v-if="selectedEvent.papersPerSession"
+                  class="d-flex align-center"
                 >
+                  <v-icon class="mr-1">mdi-file-document-outline</v-icon>
+                  {{ padNum(selectedEvent.papersPerSession) }} Papers per
+                  Session
+                </p>
+                <span v-html="selectedEvent.details"></span>
               </v-card-text>
               <v-card-actions>
                 <v-btn text color="secondary" @click="selectedOpen = false">
