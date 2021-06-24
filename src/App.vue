@@ -1,12 +1,12 @@
 <template>
   <v-app>
-    <v-app-bar app color="#af1f24" dark>
+    <v-app-bar app color="black" dark>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
           class="shrink mr-2"
           contain
-          src="https://docs.philsci.net/img/logo-circle-white-on-red-with-black.png"
+          src="https://docs.philsci.net/img/logo-circle-red-on-white.png"
           transition="scale-transition"
           width="40"
         />

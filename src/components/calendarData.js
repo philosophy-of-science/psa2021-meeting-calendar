@@ -7,15 +7,25 @@ const categories = [
   "Reception",
 ];
 
+// const colors = [
+//   "#CD3E41",
+//   "#CF7E3E",
+//   "#267E7B",
+//   "#38A832",
+//   "#AF1F23",
+//   "#B1601F",
+//   "#136B68",
+//   "#1F8F19",
+// ];
+
 const colors = [
-  "#CD3E41",
-  "#CF7E3E",
-  "#267E7B",
-  "#38A832",
-  "#AF1F23",
-  "#B1601F",
-  "#136B68",
-  "#1F8F19",
+  "indigo",
+  "teal",
+  "pink",
+  "green",
+  "blue",
+  "orange",
+  "deep-purple",
 ];
 
 let contributedPapersCount = 1;
@@ -23,7 +33,7 @@ let cognateSocietiesCount = 1;
 let symposiaCount = 1;
 
 class Event {
-  constructor(type, name, start, end, timed, details, sessions, papers) {
+  constructor(type, name, start, end, timed, details, papers) {
     this.name = name;
     this.start = new Date(start);
     this.end = new Date(end);
@@ -31,22 +41,40 @@ class Event {
     this.category = categories[type];
     this.timed = timed;
     this.details = details || "Details TBD";
-    this.sessions = sessions;
-    this.papers = papers;
-    this.papersPerSession =
-      this.sessions && this.papers
-        ? Math.round(this.papers / this.sessions)
-        : null;
+    this.papers = this.extractPapers(papers);
+  }
+
+  extractPapers(numArr) {
+    if (!numArr) {
+      return null;
+    }
+
+    const [
+      contributedPapers,
+      symposiumPapers,
+      upssPapers,
+      cognatePapers,
+    ] = numArr;
+    return { contributedPapers, symposiumPapers, upssPapers, cognatePapers };
   }
 }
 
 export const calData = [
   new Event(
+    1,
+    "Governing Board Meeting",
+    "2021-11-10T09:00",
+    "2021-11-10T17:00",
+    true
+  ),
+  new Event(
     0,
     `Cognate Societies ${cognateSocietiesCount++}`,
     "2021-11-11T08:30",
     "2021-11-11T10:00",
-    true
+    true,
+    null,
+    [0, 0, 0, 50]
   ),
   new Event(2, "☕ Coffee Break", "2021-11-11T10:00", "2021-11-11T10:15", true),
   new Event(
@@ -54,7 +82,9 @@ export const calData = [
     `Cognate Societies ${cognateSocietiesCount++}`,
     "2021-11-11T10:15",
     "2021-11-11T11:45",
-    true
+    true,
+    null,
+    [0, 0, 0, 50]
   ),
   new Event(
     1,
@@ -70,8 +100,7 @@ export const calData = [
     "2021-11-11T15:00",
     true,
     null,
-    "?",
-    4
+    [0, 40]
   ),
   new Event(2, "☕ Coffee Break", "2021-11-11T15:00", "2021-11-11T15:15", true),
   new Event(
@@ -81,8 +110,7 @@ export const calData = [
     "2021-11-11T16:45",
     true,
     null,
-    10,
-    30
+    [30]
   ),
   new Event(
     4,
@@ -113,16 +141,18 @@ export const calData = [
     "2021-11-12T09:00",
     "2021-11-12T10:30",
     true,
-    30
+    "",
+    [30]
   ),
   new Event(2, "☕ Coffee Break", "2021-11-12T10:30", "2021-11-12T10:45", true),
   new Event(
     0,
-    `Contributed Papers ${contributedPapersCount++}`,
+    `Contributed Papers ${contributedPapersCount++} and UPSS Session`,
     "2021-11-12T10:45",
     "2021-11-12T12:15",
     true,
-    30
+    null,
+    [27, 0, 3]
   ),
   new Event(2, "Lunch", "2021-11-12T12:30", "2021-11-12T13:45", true),
   new Event(
@@ -130,7 +160,9 @@ export const calData = [
     `Symposia ${symposiaCount++}`,
     "2021-11-12T14:00",
     "2021-11-12T16:00",
-    true
+    true,
+    null,
+    [0, 40]
   ),
   new Event(
     1,
@@ -152,7 +184,9 @@ export const calData = [
     `Symposia ${symposiaCount++} and Contributed Papers ${contributedPapersCount++}`,
     "2021-11-13T09:00",
     "2021-11-13T12:15",
-    true
+    true,
+    "Mix of 3 symposia (Women’s Caucus Prize Symposium and 2 symposia with 6 papers) and 7 contributed paper sessions – 42 papers – these could be 6 paper combinations or 3 paper sessions, as there will be a break at 10:30)",
+    [42, 16]
   ),
   new Event(2, "☕ Coffee Break", "2021-11-13T10:30", "2021-11-13T10:45", true),
   new Event(2, "Lunch", "2021-11-13T12:30", "2021-11-13T13:45", true),
@@ -168,9 +202,20 @@ export const calData = [
     `Symposia ${symposiaCount++} and Contributed Papers ${contributedPapersCount++}`,
     "2021-11-13T14:00",
     "2021-11-13T16:00",
-    true
+    true,
+    "Mix of 7 Symposia with 4 Papers + 3 Sessions with contributed papers (12 papers)",
+    [12, 28]
   ),
   new Event(2, "☕ Coffee Break", "2021-11-13T16:00", "2021-11-13T16:15", true),
+  new Event(
+    0,
+    `Contributed Papers ${contributedPapersCount++}`,
+    "2021-11-13T16:15",
+    "2021-11-13T17:45",
+    true,
+    null,
+    [30]
+  ),
   new Event(
     1,
     "Awards Ceremony and Presidential Address",
@@ -191,12 +236,14 @@ export const calData = [
     `Symposia ${symposiaCount++}`,
     "2021-11-14T09:00",
     "2021-11-14T11:45",
-    true
+    true,
+    "Symposia with 5 papers",
+    [0, 50]
   ),
   new Event(2, "☕ Coffee Break", "2021-11-14T10:00", "2021-11-14T10:15", true),
   new Event(
     1,
-    "Post-Event Workshop",
+    "Post-Event Workshop with PEWS",
     "2021-11-14T13:00",
     "2021-11-14T16:00",
     true

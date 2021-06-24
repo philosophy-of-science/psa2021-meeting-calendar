@@ -1,6 +1,24 @@
 <template>
   <div class="my-5">
     <v-row>
+      <v-spacer />
+      <v-col>
+        <v-chip-group>
+          <v-chip color="indigo" outlined>
+            <v-icon class="mr-2">mdi-account</v-icon>
+            Contributed Papers {{ countPapers.contributed }}</v-chip
+          >
+          <v-chip color="indigo" outlined>
+            <v-icon class="mr-2">mdi-account-multiple</v-icon>
+            Symposium Papers
+            {{ countPapers.symposiumPapers }}
+          </v-chip>
+        </v-chip-group>
+      </v-col>
+      <v-spacer />
+    </v-row>
+
+    <v-row>
       <v-col>
         <v-sheet tile height="54" class="d-flex">
           <v-btn icon class="ma-2" @click="$refs.calendar.prev()">
@@ -26,7 +44,7 @@
     </v-row>
     <v-row>
       <v-col>
-        <v-sheet>
+        <v-sheet height="900">
           <v-calendar
             ref="calendar"
             v-model="value"
@@ -46,42 +64,79 @@
             :close-on-content-click="false"
             :activator="selectedElement"
             offset-x
+            max-width="350"
+            nudge-left="15"
           >
-            <v-card color="grey lighten-4" min-width="350px" flat>
+            <v-card color="grey lighten-4" width="350">
               <v-toolbar :color="selectedEvent.color" dark>
                 <v-toolbar-title v-html="selectedEvent.name"></v-toolbar-title>
                 <v-spacer></v-spacer>
-                <p class="mb-0 text-body-2 text-uppercase d-flex align-center">
+                <v-card-actions>
+                  <v-btn text color="white" @click="selectedOpen = false">
+                    <v-icon>mdi-close</v-icon>
+                  </v-btn>
+                </v-card-actions>
+              </v-toolbar>
+              <v-card-text>
+                <p class="text-uppercase d-flex align-center">
                   <v-icon small class="mr-1">mdi-shape-outline</v-icon
                   >{{ selectedEvent.category }}
                 </p>
-              </v-toolbar>
-              <v-card-text>
-                <p v-if="selectedEvent.sessions" class="d-flex align-center">
-                  <v-icon class="mr-1">mdi-projector-screen-outline</v-icon
-                  >{{ padNum(selectedEvent.sessions) }} Sessions
-                </p>
-                <p v-if="selectedEvent.papers" class="d-flex align-center">
-                  <v-icon class="mr-1"
-                    >mdi-file-document-multiple-outline</v-icon
+                <v-row>
+                  <v-col
+                    v-if="
+                      selectedEvent.papers &&
+                      selectedEvent.papers.contributedPapers
+                    "
                   >
-                  {{ padNum(selectedEvent.papers) }} Total Papers
-                </p>
+                    <p>
+                      <v-icon class="mr-1">mdi-file-document-outline</v-icon>
+                      {{ padNum(selectedEvent.papers.contributedPapers) }}
+                      Contributed Papers
+                    </p>
+                  </v-col>
+                  <v-col
+                    v-if="
+                      selectedEvent.papers &&
+                      selectedEvent.papers.symposiumPapers
+                    "
+                  >
+                    <p>
+                      <v-icon class="mr-1">mdi-file-document-outline</v-icon>
+                      {{ padNum(selectedEvent.papers.symposiumPapers) }}
+                      Symposium Papers
+                    </p>
+                  </v-col>
+                  <v-col
+                    v-if="
+                      selectedEvent.papers && selectedEvent.papers.cognatePapers
+                    "
+                  >
+                    <p>
+                      <v-icon class="mr-1">mdi-file-document-outline</v-icon>
+                      {{ padNum(selectedEvent.papers.cognatePapers) }}
+                      Cognate Society Papers
+                    </p>
+                  </v-col>
+                  <v-col
+                    v-if="
+                      selectedEvent.papers && selectedEvent.papers.upssPapers
+                    "
+                  >
+                    <p>
+                      <v-icon class="mr-1">mdi-file-document-outline</v-icon>
+                      {{ padNum(selectedEvent.papers.upssPapers) }}
+                      UPSS Papers
+                    </p>
+                  </v-col>
+                </v-row>
+
                 <p
-                  v-if="selectedEvent.papersPerSession"
-                  class="d-flex align-center"
-                >
-                  <v-icon class="mr-1">mdi-file-document-outline</v-icon>
-                  {{ padNum(selectedEvent.papersPerSession) }} Papers per
-                  Session
-                </p>
-                <span v-html="selectedEvent.details"></span>
+                  style="max-width: 66ch"
+                  class="mt-4 mb-0"
+                  v-html="selectedEvent.details"
+                ></p>
               </v-card-text>
-              <v-card-actions>
-                <v-btn text color="secondary" @click="selectedOpen = false">
-                  Close
-                </v-btn>
-              </v-card-actions>
             </v-card>
           </v-menu>
         </v-sheet>
@@ -109,6 +164,24 @@ export default {
   computed: {
     typeToLowerCase() {
       return this.type.toLowerCase();
+    },
+    countPapers() {
+      const count = this.events.reduce((acc, current) => {
+        if (current.papers?.contributedPapers) {
+          acc.contributed = acc.contributed
+            ? acc.contributed + current.papers.contributedPapers
+            : current.papers.contributedPapers;
+        }
+
+        if (current.papers?.symposiumPapers) {
+          acc.symposiumPapers = acc.symposiumPapers
+            ? acc.symposiumPapers + current.papers.symposiumPapers
+            : current.papers.symposiumPapers;
+        }
+
+        return acc;
+      }, {});
+      return count;
     },
   },
   methods: {
