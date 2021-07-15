@@ -4,24 +4,6 @@
       <v-spacer />
       <v-col>
         <v-chip-group>
-          <v-chip color="indigo" outlined>
-            <v-icon class="mr-2">mdi-account</v-icon>
-            Contributed Papers {{ countPapers.contributed }}</v-chip
-          >
-          <v-chip color="indigo" outlined>
-            <v-icon class="mr-2">mdi-account-multiple</v-icon>
-            Symposium Papers
-            {{ countPapers.symposiumPapers }}
-          </v-chip>
-        </v-chip-group>
-      </v-col>
-      <v-spacer />
-    </v-row>
-
-    <v-row>
-      <v-spacer />
-      <v-col>
-        <v-chip-group>
           <v-chip
             :color="colors[i]"
             outlined
@@ -88,6 +70,7 @@
             @click:event="showEvent"
             :event-overlap-mode="mode"
             :event-ripple="true"
+            :category-hide-dynamic="true"
           ></v-calendar>
 
           <v-menu
@@ -191,7 +174,13 @@
 </template>
 
 <script>
-import { calData, categories, colors, catIcons } from "./calendarData";
+import {
+  calData,
+  categories,
+  colors,
+  catIcons,
+  calculatedTotal,
+} from "./calendarData";
 export default {
   data() {
     return {
@@ -208,6 +197,7 @@ export default {
       mode: "stack",
       modes: ["stack", "column"],
       icons: catIcons,
+      total: calculatedTotal,
     };
   },
   computed: {

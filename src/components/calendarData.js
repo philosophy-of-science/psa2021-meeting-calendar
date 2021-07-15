@@ -1,4 +1,7 @@
-// Palette URL: http://paletton.com/#uid=75C0u0kqlmahHu1mqp+ueh+D9cG
+// Palette URL: http://paletton.com/#uid=75C0u0kqlmahHu1mqp+ueh+D9cG\
+
+let total = 0;
+
 export const categories = [
   "All",
   "In Person Session",
@@ -306,20 +309,6 @@ class Event {
     this.location = location;
     this.details = details || null;
     this.icon = catIcons[type];
-  }
-
-  extractPapers(numArr) {
-    if (!numArr) {
-      return null;
-    }
-
-    const [
-      contributedPapers,
-      symposiumPapers,
-      upssPapers,
-      cognatePapers,
-    ] = numArr;
-    return { contributedPapers, symposiumPapers, upssPapers, cognatePapers };
   }
 }
 
@@ -774,6 +763,14 @@ function breakoutGenerator(num, types, names, start, end, details) {
     return el.type === "Breakout";
   });
   const events = [];
+  const s = new Date(start);
+  const e = new Date(end);
+  const duration = (e - s) / 1000 / 60 / 60 / 0.5;
+
+  const papers = duration * num;
+
+  total += papers;
+
   for (let i = 0; i < num; i++) {
     const event = new Event(
       types[i],
@@ -790,3 +787,5 @@ function breakoutGenerator(num, types, names, start, end, details) {
 
   return events;
 }
+
+export const calculatedTotal = total;
