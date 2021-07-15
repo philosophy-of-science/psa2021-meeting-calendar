@@ -100,7 +100,10 @@
           >
             <v-card color="grey lighten-4" width="350">
               <v-toolbar :color="selectedEvent.color" dark>
-                <v-toolbar-title v-html="selectedEvent.name"></v-toolbar-title>
+                <v-toolbar-title>
+                  <v-icon class="mr-1">{{ selectedEvent.icon }}</v-icon
+                  >{{ selectedEvent.category }}</v-toolbar-title
+                >
                 <v-spacer></v-spacer>
                 <v-card-actions>
                   <v-btn text color="white" @click="selectedOpen = false">
@@ -109,9 +112,8 @@
                 </v-card-actions>
               </v-toolbar>
               <v-card-text>
-                <p class="text-uppercase d-flex align-center">
-                  <v-icon small class="mr-1">{{ selectedEvent.icon }}</v-icon
-                  >{{ selectedEvent.category }}
+                <p class="d-flex align-center">
+                  {{ selectedEvent.name }}
                 </p>
                 <v-row>
                   <v-col
@@ -162,18 +164,16 @@
                   </v-col>
                 </v-row>
 
-                <div class="location mt-2">
+                <div class="location mt-6">
                   <p>
-                    <v-icon
-                      >mdi-home-floor-{{
-                        selectedEvent.location && selectedEvent.location.floor
-                      }}</v-icon
-                    >
+                    <v-icon>mdi-floor-plan</v-icon>
                     {{ selectedEvent.location && selectedEvent.location.name }}
                     ({{
                       selectedEvent.location && selectedEvent.location.capacity
-                    }})
+                    }}) · Floor
+                    {{ selectedEvent.location && selectedEvent.location.floor }}
                   </p>
+                  <p></p>
                 </div>
 
                 <p

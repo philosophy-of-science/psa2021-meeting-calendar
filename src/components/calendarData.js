@@ -1,13 +1,14 @@
 // Palette URL: http://paletton.com/#uid=75C0u0kqlmahHu1mqp+ueh+D9cG
 export const categories = [
   "All",
-  "Breakout - In Person",
+  "In Person Session",
   "Special Event",
   "Services",
   "Break",
   "Reception",
-  "Breakout - Hybrid",
+  "Hybrid Session",
   "Exhibit",
+  "Remote Session",
 ];
 
 export const catIcons = [
@@ -19,6 +20,7 @@ export const catIcons = [
   "mdi-party-popper",
   "mdi-video-account",
   "mdi-bookshelf",
+  "mdi-wifi",
 ];
 
 export const colors = [
@@ -30,6 +32,7 @@ export const colors = [
   "orange",
   "deep-purple",
   "red",
+  "cyan",
 ];
 
 const locArr = [
@@ -361,7 +364,7 @@ export const calData = [
   // Exhbibit
   new Event(
     7,
-    "📚 Book Exhibit",
+    "Book Exhibit",
     "2021-11-11T09:00",
     "2021-11-11T18:00",
     true,
@@ -370,7 +373,7 @@ export const calData = [
 
   new Event(
     7,
-    "📚 Book Exhibit",
+    "Book Exhibit",
     "2021-11-12T08:30",
     "2021-11-12T18:00",
     true,
@@ -379,7 +382,7 @@ export const calData = [
 
   new Event(
     7,
-    "📚 Book Exhibit",
+    "Book Exhibit",
     "2021-11-13T08:30",
     "2021-11-13T18:00",
     true,
@@ -388,7 +391,7 @@ export const calData = [
 
   new Event(
     7,
-    "📚 Book Exhibit",
+    "Book Exhibit",
     "2021-11-14T08:30",
     "2021-11-14T11:45",
     true,
@@ -481,9 +484,10 @@ export const calData = [
 
   ...breakoutGenerator(
     10,
+    Array(10).fill(1),
+    Array(10).fill("Cognate Societies Session"),
     "2021-11-11T10:15",
-    "2021-11-11T11:45",
-    "Cognate Societies Session"
+    "2021-11-11T11:45"
   ),
 
   new Event(
@@ -494,11 +498,51 @@ export const calData = [
     true
   ),
 
-  ...breakoutGenerator(10, "2021-11-11T13:00", "2021-11-11T15:00"),
+  ...breakoutGenerator(
+    10,
+    [6, 1, 1, 1, 6, 6, 1, 1, 1, 6],
+    [
+      "A Critical Analysis of the Ipcc’s Methodology of Climate Change Detection and Attribution",
+      "Bayesian Models in Philosophy of Science",
+      "Beyond Explanation: Exploring the Diversity of Neuroscientific Practice",
+      "Can Machines Learn How Clouds Work?: The Epistemic Implications of Machine Learning Methods in Climate Science",
+      "Climate Models and the Irrelevance of Chaos",
+      "Climate-Model Tuning and Predictivism",
+      "Community Engagement as Scientific and Philosophical Practice",
+      "Control and Regulation of Biological Mechanisms",
+      "Distinctions within Causation: Irreversibility, Coherence, Invariance and Machine-Likeness",
+      "Edmond Goblot’s (1858-1935) Selected Effects Theory of Function: A Reappraisal",
+      "Fission and Genetic Lineage Pluralism",
+      "Function Acquisition in Genomics",
+      "Genetics & Causality in an Age of Gwas",
+      "The “Inchworm Episode”: Reconstituting the Phenomenon of Kinesin Motility",
+      "The Significance of Quantization Procedures",
+      "Transdisciplinary Modeling in Science: Knowledge without Borders?",
+    ],
+    "2021-11-11T13:00",
+    "2021-11-11T15:00"
+  ),
 
-  new Event(4, "☕ Coffee Break", "2021-11-11T15:00", "2021-11-11T15:15", true),
+  new Event(4, "Coffee Break", "2021-11-11T15:00", "2021-11-11T15:15", true),
 
-  ...breakoutGenerator(10, "2021-11-11T15:15", "2021-11-11T16:45"),
+  ...breakoutGenerator(
+    10,
+    [1, 6, 1, 1, 1, 1, 6, 1, 6, 6],
+    [
+      "Cancer",
+      "Deflationary Realism",
+      "Epistemic Risk",
+      "Formal Epistemology",
+      "Geology",
+      "Mechanisms",
+      "Neuroscience",
+      "Observability, Underdetermination, and Complexity",
+      "Psychiatry",
+      "Simulation",
+    ],
+    "2021-11-11T15:15",
+    "2021-11-11T16:45"
+  ),
 
   new Event(
     5,
@@ -527,11 +571,43 @@ export const calData = [
   ),
 
   //   Friday
-  ...breakoutGenerator(10, "2021-11-12T09:00", "2021-11-12T10:30"),
+  ...breakoutGenerator(
+    8,
+    [6, 1, 6, 1, 6, 1, 1, 6],
+    [
+      "Causation",
+      "Cognitive Science",
+      "Computer Science",
+      "Evolution of Cooperation",
+      "Laws of Nature",
+      "Medicine",
+      "Symmetry and Unitary Equivalence",
+      "Values in Science",
+    ],
+    "2021-11-12T09:00",
+    "2021-11-12T10:30"
+  ),
 
-  new Event(4, "☕ Coffee Break", "2021-11-12T10:30", "2021-11-12T10:45", true),
+  new Event(4, "Coffee Break", "2021-11-12T10:30", "2021-11-12T10:45", true),
 
-  ...breakoutGenerator(9, "2021-11-12T10:45", "2021-11-12T12:15"),
+  ...breakoutGenerator(
+    10,
+    [6, 1, 1, 1, 6, 1, 6, 1, 6, 1],
+    [
+      "Chemistry",
+      "Cultural Evolution",
+      "Data Science",
+      "Economics",
+      "History of Physics",
+      "Idealization",
+      "Medicine 2",
+      "Philosophy of Psychology",
+      "Science and Policy",
+      "Values in Science 2",
+    ],
+    "2021-11-12T10:45",
+    "2021-11-12T12:15"
+  ),
 
   new Event(
     1,
@@ -543,7 +619,24 @@ export const calData = [
   ),
   new Event(4, "Lunch", "2021-11-12T12:30", "2021-11-12T13:45", true),
 
-  ...breakoutGenerator(10, "2021-11-12T14:00", "2021-11-12T16:00"),
+  ...breakoutGenerator(
+    10,
+    [8, 8, 8, 8, 8, 6, 8, 8, 6, 8],
+    [
+      "Confirmation and Evidence",
+      "Evolution",
+      "From Bosons to Markets to Black Holes: New Prospects for Analogical Reasoning",
+      "Mechanisms 2",
+      "Physics",
+      "Randomness in Scientific Practice",
+      "Social Science",
+      "The Major Transitions in Cognitive Evolution",
+      "The Rationality of Social Learning",
+      "Transformative Experience for Choice and Belief",
+    ],
+    "2021-11-12T14:00",
+    "2021-11-12T16:00"
+  ),
 
   new Event(
     2,
@@ -562,9 +655,26 @@ export const calData = [
   ),
 
   //   Saturday
-  ...breakoutGenerator(10, "2021-11-13T09:00", "2021-11-13T12:15"),
+  ...breakoutGenerator(
+    10,
+    [6, 6, 6, 6, 1, 1, 1, 1, 1, 1],
+    [
+      "Animal Consciousness and Welfare",
+      "Austere Approaches to Information and Representation in Cognitive Science",
+      "Causal Modeling",
+      "Conceptual and Methodological Challenges in Algorithmic Fairness",
+      "Participation in Science",
+      "Pluralism in Psychiatric Research: Insights from Philosophy of Science",
+      "Probability and Statistics",
+      "Reconstructing Geologic Time",
+      "Scientific Speculation",
+      "Space and Time",
+    ],
+    "2021-11-13T09:00",
+    "2021-11-13T12:15"
+  ),
 
-  new Event(4, "☕ Coffee Break", "2021-11-13T10:30", "2021-11-13T10:45", true),
+  new Event(4, "Coffee Break", "2021-11-13T10:30", "2021-11-13T10:45", true),
   new Event(4, "Lunch", "2021-11-13T12:30", "2021-11-13T13:45", true),
   new Event(
     4,
@@ -574,11 +684,43 @@ export const calData = [
     true
   ),
 
-  ...breakoutGenerator(10, "2021-11-13T14:00", "2021-11-13T16:00"),
+  ...breakoutGenerator(
+    10,
+    [1, 6, 1, 6, 6, 1, 1, 1, 1, 6],
+    [
+      "Coherence and Inference",
+      "Epistemic Status and Research-Strategic Role of Theories beyond the Standard Model after the Large Hadron Collider",
+      "Non-Metaphysical Resolutions of the Hole Dilemma",
+      "Philosophical Issues in Meta-Analysis",
+      "Philosophy in Science: Can Philosophers of Science Contribute to Science?",
+      "Philosophy of Science Meets Ai Ethics",
+      "Scientific Modeling",
+      "Structural Realism",
+      "What Is Socially Responsible Science?",
+      "Why Trust Science?",
+    ],
+    "2021-11-13T14:00",
+    "2021-11-13T16:00"
+  ),
 
-  new Event(4, "☕ Coffee Break", "2021-11-13T16:00", "2021-11-13T16:15", true),
+  new Event(4, "Coffee Break", "2021-11-13T16:00", "2021-11-13T16:15", true),
 
-  ...breakoutGenerator(10, "2021-11-13T16:15", "2021-11-13T17:45"),
+  ...breakoutGenerator(
+    10,
+    [1, 1, 1, 6, 1, 6, 6, 6],
+    [
+      "Big Data and Climate Science",
+      "Concepts as Epistemic Tools: A Comparative Approach",
+      "Explainable AI",
+      "Possibility Claims in Science: Philosophy of Science Meets Modal Epistemology",
+      "Precision Medicine as Promissory Science: The Epistemology and Ethics of a “Health Care Revolution”",
+      "Science and Justice",
+      "The Emergence of Spacetime in Quantum Gravity Big Bang Models",
+      "The Revival of Instrumentalism",
+    ],
+    "2021-11-13T16:15",
+    "2021-11-13T17:45"
+  ),
 
   new Event(
     2,
@@ -597,9 +739,26 @@ export const calData = [
   ),
 
   //   Sunday
-  ...breakoutGenerator(10, "2021-11-14T09:00", "2021-11-14T11:45"),
+  ...breakoutGenerator(
+    10,
+    [1, 1, 1, 6, 1, 6, 1, 1, 6, 6],
+    [
+      "Current Debates on Statistical Modeling and Inference",
+      "Evolution",
+      "Explanation",
+      "Modeling the Social Structure of Science",
+      "Neural Networks as Models of the Human Mind",
+      "Opening up Open Science",
+      "Philosophy of Physics",
+      "Stability Concepts in Ecology and Their Practical Implications",
+      "The Fundamental Physical Constants: Knowledge and Measurement",
+      "The Sciences of Sexual Desire",
+    ],
+    "2021-11-14T09:00",
+    "2021-11-14T11:45"
+  ),
 
-  new Event(4, "☕ Coffee Break", "2021-11-14T10:00", "2021-11-14T10:15", true),
+  new Event(4, "Coffee Break", "2021-11-14T10:00", "2021-11-14T10:15", true),
 
   new Event(
     2,
@@ -610,15 +769,15 @@ export const calData = [
   ),
 ];
 
-function breakoutGenerator(num, start, end, details) {
+function breakoutGenerator(num, types, names, start, end, details) {
   const possibleLocations = locArr.filter((el) => {
     return el.type === "Breakout";
   });
   const events = [];
   for (let i = 0; i < num; i++) {
     const event = new Event(
-      1,
-      `Breakout ${breakout++}`,
+      types[i],
+      `${names[i]} #${breakout++} `,
       start,
       end,
       true,
