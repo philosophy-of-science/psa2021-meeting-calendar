@@ -19,6 +19,25 @@
     </v-row>
 
     <v-row>
+      <v-spacer />
+      <v-col>
+        <v-chip-group>
+          <v-chip
+            :color="colors[i]"
+            outlined
+            v-for="(category, i) in categoryTypes"
+            :key="category"
+            @click="changeCat(category)"
+          >
+            <v-icon class="mr-2">{{ icons[i] }}</v-icon>
+            {{ category }}</v-chip
+          >
+        </v-chip-group>
+      </v-col>
+      <v-spacer />
+    </v-row>
+
+    <v-row>
       <v-col>
         <v-sheet tile height="54" class="d-flex">
           <v-btn icon class="ma-2" @click="$refs.calendar.prev()">
@@ -36,6 +55,16 @@
             class="ma-2"
             label="Calendar Type"
           ></v-select>
+          <v-select
+            v-model="mode"
+            :items="modes"
+            dense
+            outlined
+            hide-details
+            class="ma-2"
+            label="Stacking Type"
+          ></v-select>
+
           <v-btn icon class="ma-2" @click="$refs.calendar.next()">
             <v-icon>mdi-chevron-right</v-icon>
           </v-btn>
@@ -51,12 +80,14 @@
             start="2021-11-11"
             end="2021-11-14"
             :type="typeToLowerCase"
-            :categories="categories"
+            :categories="selectedCategory"
             :events="events"
-            :first-interval="8"
+            :first-interval="15"
+            :interval-minutes="30"
             :weekdays="[1, 2, 3, 4, 5, 6, 0]"
             @click:event="showEvent"
-            color="black"
+            :event-overlap-mode="mode"
+            :event-ripple="true"
           ></v-calendar>
 
           <v-menu
@@ -79,7 +110,7 @@
               </v-toolbar>
               <v-card-text>
                 <p class="text-uppercase d-flex align-center">
-                  <v-icon small class="mr-1">mdi-shape-outline</v-icon
+                  <v-icon small class="mr-1">{{ selectedEvent.icon }}</v-icon
                   >{{ selectedEvent.category }}
                 </p>
                 <v-row>
@@ -131,6 +162,20 @@
                   </v-col>
                 </v-row>
 
+                <div class="location mt-2">
+                  <p>
+                    <v-icon
+                      >mdi-home-floor-{{
+                        selectedEvent.location && selectedEvent.location.floor
+                      }}</v-icon
+                    >
+                    {{ selectedEvent.location && selectedEvent.location.name }}
+                    ({{
+                      selectedEvent.location && selectedEvent.location.capacity
+                    }})
+                  </p>
+                </div>
+
                 <p
                   style="max-width: 66ch"
                   class="mt-4 mb-0"
@@ -146,25 +191,30 @@
 </template>
 
 <script>
-import { calData } from "./calendarData";
+import { calData, categories, colors, catIcons } from "./calendarData";
 export default {
   data() {
     return {
       value: "",
       type: "4day",
-      types: ["Month", "Week", "Day", "4day"],
-      categories: ["Breakout", "Special Event", "Services", "Break"],
-      colors: ["blue", "indigo", "deep-purple", "brown", "green", "orange"],
+      types: ["Month", "Week", "Day", "4day", "Category"],
+      categoryTypes: categories,
+      category: [],
+      colors: colors,
       events: calData,
       selectedEvent: {},
       selectedElement: null,
       selectedOpen: false,
+      mode: "stack",
+      modes: ["stack", "column"],
+      icons: catIcons,
     };
   },
   computed: {
     typeToLowerCase() {
       return this.type.toLowerCase();
     },
+
     countPapers() {
       const count = this.events.reduce((acc, current) => {
         if (current.papers?.contributedPapers) {
@@ -182,6 +232,14 @@ export default {
         return acc;
       }, {});
       return count;
+    },
+
+    selectedCategory() {
+      if (this.category === "All" || Array.isArray(this.category)) {
+        return this.categoryTypes;
+      } else {
+        return [this.category];
+      }
     },
   },
   methods: {
@@ -203,8 +261,14 @@ export default {
 
       nativeEvent.stopPropagation();
     },
+
     padNum(num) {
       return num.toString().padStart(2, "0");
+    },
+
+    changeCat(e) {
+      this.type = "Category";
+      this.category = e;
     },
   },
 };
