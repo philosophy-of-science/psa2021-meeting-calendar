@@ -15,6 +15,10 @@
       </div>
 
       <v-spacer></v-spacer>
+      <p class="mb-0">
+        <v-icon class="mr-1">mdi-file-document-multiple</v-icon>{{ papers }}
+      </p>
+      <v-spacer></v-spacer>
 
       <v-btn href="https://psa2020.philsci.org" target="_blank" text>
         <span class="mr-2">PSA 2021</span>
@@ -31,6 +35,7 @@
 </template>
 
 <script>
+import { paperCount, authorCount } from "./components/calendarData";
 import MeetingCalendar from "./components/MeetingCalendar";
 
 export default {
@@ -41,7 +46,8 @@ export default {
   },
 
   data: () => ({
-    //
+    papers: paperCount,
+    authors: authorCount,
   }),
 };
 </script>

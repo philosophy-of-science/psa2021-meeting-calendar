@@ -1,7 +1,8 @@
 // Palette URL: http://paletton.com/#uid=75C0u0kqlmahHu1mqp+ueh+D9cG\
 
 const cal = require("./sessions.json");
-
+export let paperCount = 0,
+  authorCount = 0;
 export const catMap = new Map();
 
 catMap.set("All", {
@@ -107,9 +108,10 @@ class Event {
 
   createExcerpt(txt) {
     if (!txt) return null;
-    if (txt.length < 255) return txt;
-    const lastWord = txt.indexOf(" ", 254);
-    return txt.substring(0, lastWord) + "...";
+    const txtWithoutNewlines = txt.replace("\n", " ").replace(/<[^>]+>/g, " ");
+    if (txt.length < 255) return txtWithoutNewlines;
+    const lastWord = txtWithoutNewlines.indexOf(" ", 254);
+    return txtWithoutNewlines.substring(0, lastWord) + "...";
   }
   splitStr(delimiter, str) {
     if (!str) return null;
@@ -135,6 +137,8 @@ class Event {
     const papersAndAuthors = papers
       .filter((paper) => paper !== "")
       .map((paper, idx) => {
+        paperCount++;
+        authorCount++;
         return { title: paper, author: authors[idx] };
       });
     return papersAndAuthors;

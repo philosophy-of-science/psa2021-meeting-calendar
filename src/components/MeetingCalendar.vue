@@ -25,9 +25,11 @@
           <v-btn icon class="ma-2" @click="$refs.calendar.prev()">
             <v-icon>mdi-chevron-left</v-icon>
           </v-btn>
-          <v-btn icon class="ma-2" @click="value = '2021-11-11'">
-            <v-icon>mdi-calendar-today</v-icon>
+
+          <v-btn icon class="ma-2" @click="calendarReset">
+            <v-icon>mdi-refresh-circle</v-icon>
           </v-btn>
+
           <v-select
             v-model="type"
             :items="types"
@@ -110,23 +112,30 @@
                   </p>
                   <p></p>
                 </div>
-
-                <p
-                  style="max-width: 66ch"
-                  class="mt-4 mb-0"
-                  v-html="selectedEvent.details"
-                ></p>
-                <ol>
-                  <li
-                    v-for="(sub, idx) in selectedEvent.papersAndAuthors"
-                    :key="idx"
-                  >
-                    <p class="mb-0">
-                      <em>{{ sub.title }}</em>
-                    </p>
-                    <p>{{ sub.author }}</p>
-                  </li>
-                </ol>
+                <div v-show="selectedEvent.details">
+                  <p class="mb-1 font-weight-bold">
+                    <v-icon class="mr-1">mdi-text</v-icon>Abstract
+                  </p>
+                  <p style="max-width: 66ch">
+                    {{ selectedEvent.details }}
+                  </p>
+                </div>
+                <div v-show="selectedEvent.papersAndAuthors">
+                  <p class="mb-1 font-weight-bold">
+                    <v-icon class="mr-1">mdi-microphone</v-icon>Speakers
+                  </p>
+                  <ol>
+                    <li
+                      v-for="(sub, idx) in selectedEvent.papersAndAuthors"
+                      :key="idx"
+                    >
+                      <p class="mb-0">
+                        <em>{{ sub.title }}</em>
+                      </p>
+                      <p>{{ sub.author }}</p>
+                    </li>
+                  </ol>
+                </div>
               </v-card-text>
             </v-card>
           </v-menu>
@@ -189,6 +198,12 @@ export default {
   },
 
   methods: {
+    calendarReset() {
+      this.value = "";
+      this.mode = "stack";
+      this.type = "4day";
+    },
+
     showEvent({ nativeEvent, event }) {
       const open = () => {
         this.selectedEvent = event;
