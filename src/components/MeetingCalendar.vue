@@ -5,14 +5,14 @@
       <v-col>
         <v-chip-group>
           <v-chip
-            :color="colors[i]"
             outlined
-            v-for="(category, i) in categoryTypes"
-            :key="category"
-            @click="changeCat(category)"
+            v-for="(key, val) in Array.from(catMap)"
+            :color="key[1].color"
+            :key="val"
+            @click="changeCat(key[1].name)"
           >
-            <v-icon class="mr-2">{{ icons[i] }}</v-icon>
-            {{ category }}</v-chip
+            <v-icon class="mr-2">{{ key[1].icon }}</v-icon>
+            {{ key[1].name }}</v-chip
           >
         </v-chip-group>
       </v-col>
@@ -83,9 +83,9 @@
           >
             <v-card color="grey lighten-4" width="350">
               <v-toolbar :color="selectedEvent.color" dark>
-                <v-toolbar-title>
-                  <v-icon class="mr-1">{{ selectedEvent.icon }}</v-icon
-                  >{{ selectedEvent.category }}</v-toolbar-title
+                <v-toolbar-title class="d-flex align-center">
+                  {{ dateFormat(selectedEvent.start) }} -
+                  {{ dateFormat(selectedEvent.end) }}</v-toolbar-title
                 >
                 <v-spacer></v-spacer>
                 <v-card-actions>
@@ -95,66 +95,18 @@
                 </v-card-actions>
               </v-toolbar>
               <v-card-text>
-                <p class="d-flex align-center">
-                  {{ selectedEvent.name }}
+                <p>
+                  <strong>{{ selectedEvent.name }}</strong>
                 </p>
-                <v-row>
-                  <v-col
-                    v-if="
-                      selectedEvent.papers &&
-                      selectedEvent.papers.contributedPapers
-                    "
-                  >
-                    <p>
-                      <v-icon class="mr-1">mdi-file-document-outline</v-icon>
-                      {{ padNum(selectedEvent.papers.contributedPapers) }}
-                      Contributed Papers
-                    </p>
-                  </v-col>
-                  <v-col
-                    v-if="
-                      selectedEvent.papers &&
-                      selectedEvent.papers.symposiumPapers
-                    "
-                  >
-                    <p>
-                      <v-icon class="mr-1">mdi-file-document-outline</v-icon>
-                      {{ padNum(selectedEvent.papers.symposiumPapers) }}
-                      Symposium Papers
-                    </p>
-                  </v-col>
-                  <v-col
-                    v-if="
-                      selectedEvent.papers && selectedEvent.papers.cognatePapers
-                    "
-                  >
-                    <p>
-                      <v-icon class="mr-1">mdi-file-document-outline</v-icon>
-                      {{ padNum(selectedEvent.papers.cognatePapers) }}
-                      Cognate Society Papers
-                    </p>
-                  </v-col>
-                  <v-col
-                    v-if="
-                      selectedEvent.papers && selectedEvent.papers.upssPapers
-                    "
-                  >
-                    <p>
-                      <v-icon class="mr-1">mdi-file-document-outline</v-icon>
-                      {{ padNum(selectedEvent.papers.upssPapers) }}
-                      UPSS Papers
-                    </p>
-                  </v-col>
-                </v-row>
+                <p class="d-flex align-center">
+                  <v-icon class="mr-1">{{ selectedEvent.icon }}</v-icon
+                  >{{ selectedEvent.category }}
+                </p>
 
-                <div class="location mt-6">
+                <div class="location mt-6" v-if="selectedEvent.location">
                   <p>
                     <v-icon>mdi-floor-plan</v-icon>
-                    {{ selectedEvent.location && selectedEvent.location.name }}
-                    ({{
-                      selectedEvent.location && selectedEvent.location.capacity
-                    }}) · Floor
-                    {{ selectedEvent.location && selectedEvent.location.floor }}
+                    {{ selectedEvent.location }}
                   </p>
                   <p></p>
                 </div>
@@ -164,6 +116,17 @@
                   class="mt-4 mb-0"
                   v-html="selectedEvent.details"
                 ></p>
+                <ol>
+                  <li
+                    v-for="(sub, idx) in selectedEvent.papersAndAuthors"
+                    :key="idx"
+                  >
+                    <p class="mb-0">
+                      <em>{{ sub.title }}</em>
+                    </p>
+                    <p>{{ sub.author }}</p>
+                  </li>
+                </ol>
               </v-card-text>
             </v-card>
           </v-menu>
@@ -174,32 +137,24 @@
 </template>
 
 <script>
-import {
-  calData,
-  categories,
-  colors,
-  catIcons,
-  calculatedTotal,
-} from "./calendarData";
+import { calData, catMap } from "./calendarData";
 export default {
   data() {
     return {
       value: "",
       type: "4day",
       types: ["Month", "Week", "Day", "4day", "Category"],
-      categoryTypes: categories,
       category: [],
-      colors: colors,
       events: calData,
       selectedEvent: {},
       selectedElement: null,
       selectedOpen: false,
       mode: "stack",
       modes: ["stack", "column"],
-      icons: catIcons,
-      total: calculatedTotal,
+      catMap: catMap,
     };
   },
+
   computed: {
     typeToLowerCase() {
       return this.type.toLowerCase();
@@ -226,12 +181,13 @@ export default {
 
     selectedCategory() {
       if (this.category === "All" || Array.isArray(this.category)) {
-        return this.categoryTypes;
+        return Array.from(this.catMap.keys());
       } else {
         return [this.category];
       }
     },
   },
+
   methods: {
     showEvent({ nativeEvent, event }) {
       const open = () => {
@@ -252,13 +208,19 @@ export default {
       nativeEvent.stopPropagation();
     },
 
-    padNum(num) {
-      return num.toString().padStart(2, "0");
-    },
-
     changeCat(e) {
+      if (e === this.category) {
+        this.type = "4day";
+        this.category = "All";
+        return;
+      }
       this.type = "Category";
       this.category = e;
+    },
+
+    dateFormat(e) {
+      const d = new Date(e);
+      return d.toLocaleTimeString(undefined, { timeStyle: "short" });
     },
   },
 };
