@@ -88,7 +88,8 @@ class Event {
     track,
     authors,
     subs,
-    format
+    format,
+    mod
   ) {
     this.name = name;
     this.category = this.formatter(format);
@@ -100,7 +101,7 @@ class Event {
     this.track = track;
     this.authors = this.splitStr(",", authors);
     this.subs = this.splitStr("|", subs);
-
+    this.mod = mod;
     this.icon = catMap.get(this.category).icon || "mdi-expand-all";
     this.color = catMap.get(this.category).color || "red";
     this.papersAndAuthors = this.papers(this.authors, this.subs);
@@ -113,6 +114,7 @@ class Event {
     const lastWord = txtWithoutNewlines.indexOf(" ", 254);
     return txtWithoutNewlines.substring(0, lastWord) + "...";
   }
+
   splitStr(delimiter, str) {
     if (!str) return null;
     return str.split(delimiter);
@@ -158,6 +160,7 @@ export const calData = cal.map((session) => {
     session.track,
     session.authors,
     session.subs,
-    session.format
+    session.format,
+    session.moderator
   );
 });

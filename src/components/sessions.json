@@ -625,7 +625,7 @@
     "track": "Values in Science",
     "venue": "Key Ballroom 12",
     "format": "In-Person Presentation",
-    "subs": "Socially Responsible Science: Mapping the Terrain|Socially Responsible Science as Accountable Science|How to Identify Socially Responsible Research Endeavors?|A Tale of Two Communities||",
+    "subs": "Socially Responsible Science: Mapping the Terrain|Socially Responsible Science as Accountable Science|How to Identify Socially Responsible Research Endeavors?|Representation Without Reification||",
     "authors": "Inmaculada de Melo-Martin, Joyce C. Havstad, Martin Carrier, Kristen Intemann, Haixin Dang",
     "moderator": ""
   },
@@ -1007,7 +1007,7 @@
   {
     "id": 79,
     "type": "Session",
-    "name": "Neuroscience",
+    "name": "Philosophy of Neuroscience: Models and Methods",
     "date": "2021-11-13",
     "start": "16:15:00",
     "end": "17:45:00",
@@ -1127,7 +1127,7 @@
   {
     "id": 87,
     "type": "Session",
-    "name": "Psychiatry",
+    "name": "Psychiatry: Modelling, Conceptualizing and Treating Mental Illness",
     "date": "2021-11-13",
     "start": "16:15:00",
     "end": "17:45:00",
@@ -1607,7 +1607,7 @@
   {
     "id": 120,
     "type": "Session",
-    "name": "Observability, Underdetermination, and Complexity",
+    "name": "General Philosophy of Science",
     "date": "2021-11-11",
     "start": "15:15:00",
     "end": "17:15:00",

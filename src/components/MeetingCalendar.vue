@@ -1,7 +1,45 @@
 <template>
   <div class="my-5">
+    <v-row justify="space-between">
+      <v-autocomplete
+        v-model="detail"
+        auto-select-first
+        clearable
+        :items="autocompleteDataset"
+        label="Search program"
+        :return-object="true"
+      ></v-autocomplete>
+    </v-row>
+
+    <v-row v-if="dialog">
+      <v-dialog width="500" v-model="dialog">
+        <v-card>
+          <v-card-title class="text-h5 grey lighten-2">
+            {{ detail.session }}
+          </v-card-title>
+
+          <v-card-text class="mt-3">
+            <p>
+              <v-icon>mdi-calendar</v-icon>
+              {{ detail.date }} ({{ detail.start }} - {{ detail.end }})
+            </p>
+            <p>
+              <v-icon>mdi-floor-plan</v-icon>
+              {{ detail.location }}
+            </p>
+          </v-card-text>
+
+          <v-divider></v-divider>
+
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn color="primary" text @click="detail = null"> Close </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
+    </v-row>
+
     <v-row>
-      <v-spacer />
       <v-col>
         <v-chip-group>
           <v-chip
@@ -16,7 +54,6 @@
           >
         </v-chip-group>
       </v-col>
-      <v-spacer />
     </v-row>
 
     <v-row>
@@ -39,6 +76,7 @@
             class="ma-2"
             label="Calendar Type"
           ></v-select>
+
           <v-select
             v-model="mode"
             :items="modes"
@@ -120,6 +158,13 @@
                     {{ selectedEvent.details }}
                   </p>
                 </div>
+                <div>
+                  <p class="mb-1 font-weight-bold">
+                    <v-icon class="mr-1">mdi-account-clock</v-icon>Moderator
+                  </p>
+                  <p v-if="selectedEvent.mod">{{ selectedEvent.mod }}</p>
+                  <p class="red--text" v-else>Moderator needed!</p>
+                </div>
                 <div v-show="selectedEvent.papersAndAuthors">
                   <p class="mb-1 font-weight-bold">
                     <v-icon class="mr-1">mdi-microphone</v-icon>Speakers
@@ -150,6 +195,8 @@ import { calData, catMap } from "./calendarData";
 export default {
   data() {
     return {
+      detail: null,
+
       value: "",
       type: "4day",
       types: ["Month", "Week", "Day", "4day", "Category"],
@@ -165,6 +212,10 @@ export default {
   },
 
   computed: {
+    dialog() {
+      return Boolean(this.detail);
+    },
+
     typeToLowerCase() {
       return this.type.toLowerCase();
     },
@@ -195,6 +246,74 @@ export default {
         return [this.category];
       }
     },
+
+    autocompleteDataset() {
+      const ds = this.events.reduce((prev, current) => {
+        prev.push({
+          text: current.name,
+          value: current.name,
+          session: current.name,
+          type: "title",
+          date: current.start.toLocaleDateString(undefined, {
+            dateStyle: "full",
+          }),
+          start: current.start.toLocaleTimeString(undefined, {
+            timeStyle: "short",
+          }),
+          end: current.end.toLocaleTimeString(undefined, {
+            timeStyle: "short",
+          }),
+          location: current.location,
+        });
+
+        if (current.papersAndAuthors) {
+          current.papersAndAuthors.forEach((item) => {
+            if (item.author) {
+              prev.push({
+                text: item.author.trim(),
+                value: item.author.trim(),
+                session: current.name,
+                type: "author",
+                date: current.start.toLocaleDateString(undefined, {
+                  dateStyle: "full",
+                }),
+                start: current.start.toLocaleTimeString(undefined, {
+                  timeStyle: "short",
+                }),
+                end: current.end.toLocaleTimeString(undefined, {
+                  timeStyle: "short",
+                }),
+                location: current.location,
+              });
+
+              prev.push({
+                text: item.title.trim(),
+                value: item.title.trim(),
+                session: current.name,
+                type: "title",
+                date: current.start.toLocaleDateString(undefined, {
+                  dateStyle: "full",
+                }),
+                start: current.start.toLocaleTimeString(undefined, {
+                  timeStyle: "short",
+                }),
+                end: current.end.toLocaleTimeString(undefined, {
+                  timeStyle: "short",
+                }),
+                location: current.location,
+              });
+            }
+          });
+        }
+        return prev;
+      }, []);
+
+      const sorted = ds.sort((a, b) => {
+        return a.value > b.value ? 1 : -1;
+      });
+
+      return sorted;
+    },
   },
 
   methods: {
@@ -205,6 +324,7 @@ export default {
     },
 
     showEvent({ nativeEvent, event }) {
+      console.log(nativeEvent, event);
       const open = () => {
         this.selectedEvent = event;
         this.selectedElement = nativeEvent.target;
