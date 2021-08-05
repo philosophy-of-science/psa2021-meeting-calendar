@@ -148,8 +148,9 @@ class Event {
 }
 
 export const calData = cal.map((session) => {
-  const start = session.date + ":" + session.start;
-  const end = session.date + ":" + session.end;
+  const start =
+    session.date + "T" + session.start.padStart(8, "0") + ".000-05:00";
+  const end = session.date + "T" + session.end.padStart(8, "0") + ".000-05:00";
   return new Event(
     session.name,
     start,
