@@ -104,6 +104,7 @@ class Event {
     this.mod = mod;
     this.icon = catMap.get(this.category).icon || "mdi-expand-all";
     this.color = catMap.get(this.category).color || "red";
+    this.needsMod = format ? true : false;
     this.papersAndAuthors = this.papers(this.authors, this.subs);
   }
 
