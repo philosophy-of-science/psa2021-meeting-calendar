@@ -11,8 +11,8 @@
       ></v-autocomplete>
     </v-row>
 
-    <v-row v-if="dialog">
-      <v-dialog width="500" v-model="dialog">
+    <v-row v-if="detail">
+      <v-dialog width="500" v-model="detail">
         <v-card>
           <v-card-title class="text-h5 grey lighten-2">
             {{ detail.session }}
@@ -20,17 +20,18 @@
 
           <v-card-text class="mt-3">
             <p>
-              <v-icon>mdi-calendar</v-icon>
+              <v-icon dense left>mdi-calendar</v-icon>
               {{ detail.date }} ({{ detail.start }} - {{ detail.end }})
             </p>
-            <p>
-              <v-icon>mdi-floor-plan</v-icon>
-              {{ detail.location }}
-            </p>
+
+            <event-type :icon="detail.icon" :type="detail.category" />
+
+            <Location :location="detail.location" />
+
             <Track :track="detail.track" />
 
             <Moderator :mod="detail.mod" :needsMod="detail.needsMod" />
-            <Papers :papers="detail.papers" />
+            <Papers :papers="detail.papers" :compare="detail.text" />
           </v-card-text>
 
           <v-divider></v-divider>
@@ -49,11 +50,15 @@
 import Papers from "./Papers.vue";
 import Moderator from "./Moderator.vue";
 import Track from "./Track.vue";
+import Location from "./Location.vue";
+import EventType from "./EventType.vue";
 export default {
   components: {
     Papers,
     Moderator,
     Track,
+    Location,
+    EventType,
   },
 
   props: {
@@ -67,10 +72,6 @@ export default {
   },
 
   computed: {
-    dialog() {
-      return Boolean(this.detail);
-    },
-
     autocompleteDataset() {
       const ds = this.events.reduce((prev, current) => {
         prev.push({
@@ -80,6 +81,8 @@ export default {
           papers: current.papersAndAuthors,
           mod: current.mod,
           needsMod: current.needsMod,
+          category: current.category,
+          icon: current.icon,
           type: "title",
           track: current.track,
           date: current.start.toLocaleDateString(undefined, {
@@ -106,6 +109,9 @@ export default {
                 mod: current.mod,
                 needsMod: current.needsMod,
                 type: "author",
+                category: current.category,
+                icon: current.icon,
+
                 date: current.start.toLocaleDateString(undefined, {
                   dateStyle: "full",
                 }),
@@ -124,7 +130,11 @@ export default {
                 value: item.title.trim(),
                 session: current.name,
                 papers: current.papersAndAuthors,
+                icon: current.icon,
+
                 mod: current.mod,
+                category: current.category,
+
                 needsMod: current.needsMod,
                 type: "title",
                 date: current.start.toLocaleDateString(undefined, {

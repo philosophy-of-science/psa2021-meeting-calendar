@@ -142,7 +142,10 @@ class Event {
       .map((paper, idx) => {
         paperCount++;
         authorCount++;
-        return { title: paper, author: authors[idx] };
+        return {
+          title: paper && paper.trim(),
+          author: authors[idx] && authors[idx].trim(),
+        };
       });
     return papersAndAuthors;
   }
