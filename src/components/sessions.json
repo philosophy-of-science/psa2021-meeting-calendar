@@ -228,9 +228,9 @@
     "id": 27,
     "type": "Session",
     "name": "Modeling the Social Structure of Science",
-    "date": "2021-11-12",
+    "date": "2021-11-14",
     "start": "9:00:00",
-    "end": "12:15:00",
+    "end": "11:45:00",
     "abstract": "<p>Metascientists and philosophers of science are interested in what makes science work as it does. Formal models of scientific practice are one way to do this. In recent years, philosophers of science have been using formal models to investigate the role of incentives, institutions, and communication structures in informing the outcomes of accuracy, efficiency, and equity in science. In parallel, researchers in the metascience movement have also been using formal models to understand the causes and consequences of the replication crisis in the social and biomedical sciences. Both communities have converged, from different trajectories, on the central question: What is the role of the social structure of science in helping and hindering the aims of scientific progress and credibility? </p><p> </p><p>This interdisciplinary symposium will present theses centered around the possibility of studying the social structure of science using formal models and serves to connect active research programs investigating the social epistemology of science. The aim is to provide a presentation of the state-of-the-art of the literature on social epistemology of science and to foster intellectual progress in the field by connecting scholars from diverse backgrounds, including philosophy of science, computer science, cognitive science, and cultural evolutionary theory.</p>",
     "track": "Game Theory",
     "venue": "",
@@ -243,9 +243,9 @@
     "id": 28,
     "type": "Session",
     "name": "Opening Up Open Science",
-    "date": "2021-11-12",
+    "date": "2021-11-14",
     "start": "9:00:00",
-    "end": "12:15:00",
+    "end": "11:45:00",
     "abstract": "<p>The open science movement is attracting significant attention from the scientific community in an effort to increase the reliability of science, promote scientific innovation, and make scientific information widely available to non-specialists. It encompasses a wide variety of initiatives, such as publishing in open-access venues, making study data and methods publicly available, pre-registering study designs in trial registries, encouraging the publication of negative as well as positive results, and making peer review reports publicly available.</p><p> </p><p>As this movement develops, philosophers of science interested in doing socially engaged work have important opportunities to help shape open science in ways that maximize its strengths and minimize its weaknesses. This symposium focuses especially on four aspects of the open science movement that merit philosophical consideration: the importance of fostering epistemic diversity and pluralistic confrontation within open science, the challenges of implementing pre-registration as a strategy for promoting replicability, the potential for using preprint repositories to certify research quality while promoting openness, and the steps needed to fulfill the open science movement's goal of facilitating better decision making by non-specialists.</p>",
     "track": "Science policy",
     "venue": "",
@@ -258,7 +258,7 @@
     "id": 29,
     "type": "Session",
     "name": "Pluralism in Psychiatric Research: Insights from Philosophy of Science",
-    "date": "2021-11-12",
+    "date": "2021-11-13",
     "start": "9:00:00",
     "end": "12:15:00",
     "abstract": "<p>Pluralism in philosophy of science is committed to the idea that scientific phenomena are complex and that they require multiple theoretical frameworks to be fully explained and intervened upon. Adopting such a pluralistic framework, recent work in feminist philosophy of science as well as in philosophy of medicine has emphasized taxonomic pluralism and the possibility of the coexistence of crosscutting classifications of scientific domains, each of which captures important aspects of the (complex) target of scientific inquiry. This symposium proposal takes cues from these discussions, and explores their implications for the philosophy of psychiatry. Mental disorder is an intricate and multi-dimensional phenomenon that is intimately tied to an individual, their biology, and their social and cultural contexts, warranting multiple explanatory frameworks to enhance psychiatric epistemology. Papers in the symposium will examine how psychiatric knowledge is made by reflecting on taxonomies that are based on biological mechanisms, natural kinds, theoretical causal models, as well as those incorporating patients' perspectives and realities. Rather than presupposing that there is one correct taxonomy for psychiatric disorders, these papers proceed on the assumption that different psychiatric taxonomies track different properties and processes, thereby serving different interests (e.g., explanation, prediction, intervention).</p>",
@@ -273,9 +273,9 @@
     "id": 30,
     "type": "Session",
     "name": "Stability Concepts in Ecology and Their Practical Implications",
-    "date": "2021-11-12",
+    "date": "2021-11-14",
     "start": "9:00:00",
-    "end": "12:15:00",
+    "end": "11:45:00",
     "abstract": "<p>Stability is a recurrent theme in ecological disciplines, but it is notoriously difficult to define. It also comes with a rather rich lexical field that includes notions such as equilibrium, balance, resilience, resistance to disturbance, and ecosystem health. Indeed, stability is part of many conceptual frameworks in ecology and as such, it shapes how researchers apprehend and describe their target system. Perhaps unsurprisingly, debates surrounding this notion are also quite diverse. Many have debated how to define and measure various forms of stability, others have discussed whether it is present or absent in ecological entities, and yet others have endorsed it, sometimes implicitly, as a value in ecological management. The papers in this session will introduce debates in ecology and environmental science that illustrate the centrality of this notion; how it has and still shapes ecological practices and values in important ways.</p>",
     "track": "Philosophy of Biology - ecology",
     "venue": "Key Ballroom 01",
@@ -842,7 +842,7 @@
   {
     "id": 68,
     "type": "Session",
-    "name": "Mechanisms",
+    "name": "Mechanisms 2",
     "date": "2021-11-13",
     "start": "16:15:00",
     "end": "17:45:00",
@@ -1262,7 +1262,7 @@
   {
     "id": 96,
     "type": "Session",
-    "name": "Mechanisms 2",
+    "name": "Mechanisms",
     "date": "2021-11-12",
     "start": "14:00:00",
     "end": "16:00:00",
@@ -1457,7 +1457,7 @@
   {
     "id": 110,
     "type": "Session",
-    "name": "American Association of Philosophy Teachers (AAPT)",
+    "name": "AAPT-PSA Teaching Hub",
     "date": "2021-11-11",
     "start": "8:30:00",
     "end": "10:00:00",
@@ -1465,8 +1465,8 @@
     "track": "Teaching philosophy of science",
     "venue": "Key Ballroom 11",
     "format": "Hybrid Presentation",
-    "subs": "Introduction to the AAPT-PSA Teaching Hub|A Philosophy of Science Contribution to Undergraduates’ Formation of Identities as Scientists: Insights From a Multi-year Cohort Study|Robust Classrooms: Redesigning Science Learning Environments|||",
-    "authors": "Melissa Jacquart, Vadim Keyser, Hannah Howland, Sean Valles",
+    "subs": "Introduction to the AAPT-PSA Teaching Hub|Thinking Science: Information Technology and People|Robust Classrooms: Redesigning Science Learning Environments|||",
+    "authors": "Melissa Jacquart, Vadim Keyser, Hannah Howland, Ellen Hart",
     "moderator": ""
   },
   {
@@ -1497,7 +1497,7 @@
     "format": "Hybrid Presentation",
     "subs": "The Needle in the Haystack: Finding the Actual Amongst the Possible|Economic Models and Possible Explanation|How-Possibly Explanations in Economics: Anything Goes?|||",
     "authors": "Till Grüne-Yanoff, Jennifer Jhun, N. Emrah Aydinonat",
-    "moderator": ""
+    "moderator": "Philippe Verreault-Julien"
   },
   {
     "id": 113,
@@ -1557,7 +1557,7 @@
     "format": "In-Person Presentation",
     "subs": "Microbial community regeneration|Regeneration and cancer|Regeneration and the germline|The role of value attribution in coral regeneration|What is Regeneration in Biology, How Do We Know, and Why Should We Care?|",
     "authors": "Elis Jones, Andrew Inkpen, Lucie Laplane, Jane Maienschein, Kate MacCord",
-    "moderator": ""
+    "moderator": "Andrew Inkpen"
   },
   {
     "id": 117,
@@ -1587,7 +1587,7 @@
     "format": "Hybrid Presentation",
     "subs": "Fitter, Stronger, More General: The Multiple Aspirations of Newtonian Induction|Systematicity and Necessity in Kant’s Account of Particular Causal Laws|The Impact of Uniformitarianism on Geologic Induction|||",
     "authors": "Zvi Biener, Meghan Page, Katherine Dunlop",
-    "moderator": ""
+    "moderator": "Matthew Brown"
   },
   {
     "id": 119,
@@ -1602,7 +1602,7 @@
     "format": "In-Person Presentation",
     "subs": "Toward a More Fine-Grained and Diverse Methodological Landscape  of Human Behavior Research|Convergent Perspectivism|Tales of Brains and Behavior:  A Pluralist Integration in Radical Embodied Cognitive Scienc|Integrating Methods in the Human Behavioral Sciences:  Implications for Scientific Pluralism||",
     "authors": "Ingo Brigandt, Vicente Raja, Kathryn Plaisance, Nina Atanasova",
-    "moderator": ""
+    "moderator": "Ingo Brigandt"
   },
   {
     "id": 120,
@@ -1789,7 +1789,7 @@
     "type": "Break",
     "name": "Book Exhibit",
     "date": "2021-11-12",
-    "start": "9:00:00",
+    "start": "8:00:00",
     "end": "18:00:00",
     "abstract": "",
     "track": "",
@@ -1804,7 +1804,7 @@
     "type": "Break",
     "name": "Book Exhibit",
     "date": "2021-11-13",
-    "start": "9:00:00",
+    "start": "8:00:00",
     "end": "18:00:00",
     "abstract": "",
     "track": "",
@@ -1819,8 +1819,8 @@
     "type": "Break",
     "name": "Book Exhibit",
     "date": "2021-11-14",
-    "start": "9:00:00",
-    "end": "11:45:00",
+    "start": "8:00:00",
+    "end": "18:00:00",
     "abstract": "",
     "track": "",
     "venue": "Key Ballroom 07-08",
@@ -1884,6 +1884,36 @@
     "abstract": "",
     "track": "",
     "venue": "Key Ballroom South Foyer",
+    "format": "",
+    "subs": "",
+    "authors": "",
+    "moderator": ""
+  },
+  {
+    "id": 142,
+    "type": "Session",
+    "name": "Genetics & Causality in an Age of GWAS",
+    "date": "2021-11-11",
+    "start": "13:00:00",
+    "end": "15:00:00",
+    "abstract": "<p>Recent developments in genomic technology provide new insights into the genetic underpinnings of complex traits. Genome wide association studies (GWAS) have identified hundreds of small genetic variants that are statistically associated with complex traits such as intelligence, schizophrenia, and depression. Because effect sizes of individual variants are miniscule, researchers are now creating polygenic scores which sum the total effects of all statistically associated genetic variants. It is commonplace for practitioners in the sciences to refer to SNPs and polygenic scores as 'causal determinants' of traits of interest – but are these philosophically contentions interpretations justified? The goal of this symposium is to bring together an interdisciplinary team of scientists and philosophers to address old questions about causality and genetics in light of cutting edge technological advancements.</p>",
+    "track": "Causality",
+    "venue": "Armistead",
+    "format": "In-Person Presentation",
+    "subs": "",
+    "authors": "Lucas Matthews, Jonathan Livengood, Kate Lynch, Eric Turkheimer",
+    "moderator": ""
+  },
+  {
+    "id": 143,
+    "type": "Break",
+    "name": "Opening Reception",
+    "date": "2021-11-11",
+    "start": "17:15:00",
+    "end": "18:45:00",
+    "abstract": "",
+    "track": "",
+    "venue": "",
     "format": "",
     "subs": "",
     "authors": "",

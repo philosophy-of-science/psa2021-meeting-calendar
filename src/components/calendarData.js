@@ -77,6 +77,12 @@ catMap.set("Lunch", {
   color: "cyan",
 });
 
+catMap.set("Reception", {
+  name: "Reception",
+  icon: "mdi-party-popper",
+  color: "red",
+});
+
 class Event {
   constructor(
     name,
@@ -131,6 +137,7 @@ class Event {
     if (this.name === "Childcare") return "Childcare";
     if (this.name === "Nursing Mothers' Room") return "Nursing Mothers' Room";
     if (/Lunch/.exec(this.name)) return "Lunch";
+    if (/Reception/.exec(this.name)) return "Reception";
     return "Services";
   }
 
