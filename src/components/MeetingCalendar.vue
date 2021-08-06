@@ -101,24 +101,17 @@
                 <p>
                   <strong>{{ selectedEvent.name }}</strong>
                 </p>
-                <p class="d-flex align-center">
-                  <v-icon class="mr-1">{{ selectedEvent.icon }}</v-icon
-                  >{{ selectedEvent.category }}
-                </p>
 
-                <div class="location mt-6" v-if="selectedEvent.location">
-                  <p>
-                    <v-icon>mdi-floor-plan</v-icon>
-                    {{ selectedEvent.location }}
-                  </p>
-                  <p></p>
-                </div>
+                <event-type
+                  :icon="selectedEvent.icon"
+                  :type="selectedEvent.category"
+                />
+
+                <Location :location="selectedEvent.location" />
 
                 <div v-show="selectedEvent.details">
-                  <p class="mb-1 font-weight-bold">
-                    <v-icon class="mr-1">mdi-text</v-icon>Abstract
-                  </p>
-                  <p style="max-width: 66ch">
+                  <p class="mb-3">
+                    <v-icon dense left>mdi-text</v-icon>
                     {{ selectedEvent.details }}
                   </p>
                 </div>
@@ -146,12 +139,16 @@ import AutoComplete from "./AutoComplete.vue";
 import Papers from "./Papers.vue";
 import Moderator from "./Moderator.vue";
 import Track from "./Track.vue";
+import Location from "./Location.vue";
+import EventType from "./EventType.vue";
 export default {
   components: {
     AutoComplete,
     Papers,
     Moderator,
     Track,
+    Location,
+    EventType,
   },
 
   data() {
