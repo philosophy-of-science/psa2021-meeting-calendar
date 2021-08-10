@@ -209,7 +209,6 @@ export default {
     },
 
     showEvent({ nativeEvent, event }) {
-      console.log(nativeEvent, event);
       const open = () => {
         this.selectedEvent = event;
         this.selectedElement = nativeEvent.target;
