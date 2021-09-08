@@ -125,9 +125,9 @@ export default {
               });
 
               prev.push({
-                text: item.title.trim(),
+                text: item.title && item.title.trim(),
                 track: current.track,
-                value: item.title.trim(),
+                value: item.title && item.title.trim(),
                 session: current.name,
                 papers: current.papersAndAuthors,
                 icon: current.icon,
@@ -154,11 +154,12 @@ export default {
         return prev;
       }, []);
 
-      const sorted = ds.sort((a, b) => {
-        return a.value > b.value ? 1 : -1;
-      });
-
-      return sorted;
+      const filtered = ds
+        .filter((item) => {
+          return !!item.value;
+        })
+        .sort((a, b) => (a.value > b.value ? 1 : -1));
+      return filtered;
     },
   },
 };

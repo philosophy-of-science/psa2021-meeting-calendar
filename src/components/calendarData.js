@@ -1,8 +1,13 @@
 // Palette URL: http://paletton.com/#uid=75C0u0kqlmahHu1mqp+ueh+D9cG\
 
 const cal = require("./sessions.json");
+
 export let paperCount = 0,
-  authorCount = 0;
+  authorCount = 0,
+  hybridCount = 0,
+  remoteCount = 0,
+  inPersonCount = 0;
+
 export const catMap = new Map();
 
 catMap.set("All", {
@@ -127,8 +132,25 @@ class Event {
     return str.split(delimiter);
   }
 
+  countFormat(test) {
+    switch (test) {
+      case "Hybrid Presentation":
+        hybridCount++;
+        break;
+      case "In-Person Presentation":
+        inPersonCount++;
+        break;
+      case "Remote Presentation":
+        remoteCount++;
+        break;
+    }
+  }
+
   formatter(format) {
-    if (format) return format;
+    if (format) {
+      this.countFormat(format);
+      return format;
+    }
     if (this.name === "Coffee Break") return "Coffee Break";
     if (this.name === "Poster Forum and Reception")
       return "Poster Forum and Reception";
@@ -142,16 +164,17 @@ class Event {
   }
 
   papers(authors, papers) {
-    if (!authors || !papers) return null;
+    if (!authors) return null;
 
-    const papersAndAuthors = papers
-      .filter((paper) => paper !== "")
-      .map((paper, idx) => {
-        paperCount++;
+    const papersAndAuthors = authors
+      .filter((author) => author !== "")
+      .map((author, idx) => {
+        const isPaper = papers && papers[idx];
+        isPaper && paperCount++;
         authorCount++;
         return {
-          title: paper && paper.trim(),
-          author: authors[idx] && authors[idx].trim(),
+          title: isPaper && papers[idx].trim(),
+          author: author && author.trim(),
         };
       });
     return papersAndAuthors;

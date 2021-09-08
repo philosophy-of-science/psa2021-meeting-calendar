@@ -135,6 +135,7 @@
 
 <script>
 import { calData, catMap } from "./calendarData";
+console.log(calData.filter((e) => /Poster/.exec(e.name)));
 import AutoComplete from "./AutoComplete.vue";
 import Papers from "./Papers.vue";
 import Moderator from "./Moderator.vue";

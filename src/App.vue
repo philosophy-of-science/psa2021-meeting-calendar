@@ -15,10 +15,53 @@
       </div>
 
       <v-spacer></v-spacer>
-      <p class="mb-0">
-        <v-icon class="mr-1">mdi-file-document-multiple</v-icon>{{ papers }}
-      </p>
+      <v-chip-group>
+        <v-tooltip bottom color="pink">
+          <template v-slot:activator="{ on, attrs }">
+            <v-chip class="mb-0 mr-2" v-bind="attrs" v-on="on" color="pink">
+              <v-icon class="mr-1">mdi-account</v-icon>{{ inPersonCount }}
+            </v-chip>
+          </template>
+          <span>In-Person Sessions</span>
+        </v-tooltip>
 
+        <v-tooltip bottom color="indigo">
+          <template v-slot:activator="{ on, attrs }">
+            <v-chip class="mb-0 mr-2" v-bind="attrs" v-on="on" color="indigo">
+              <v-icon class="mr-1">mdi-video-account</v-icon>{{ hybridCount }}
+            </v-chip>
+          </template>
+          <span>Hybrid Sessions</span>
+        </v-tooltip>
+
+        <v-tooltip bottom color="blue">
+          <template v-slot:activator="{ on, attrs }">
+            <v-chip class="mb-0 mr-2" v-bind="attrs" v-on="on" color="blue">
+              <v-icon class="mr-1">mdi-wifi</v-icon>{{ remoteCount }}
+            </v-chip>
+          </template>
+          <span>Remote Sessions</span>
+        </v-tooltip>
+
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <v-chip class="mb-0 mr-2" v-bind="attrs" v-on="on">
+              <v-icon class="mr-1">mdi-account-edit</v-icon>{{ authors }}
+            </v-chip>
+          </template>
+          <span>Presenters</span>
+        </v-tooltip>
+
+        <v-tooltip bottom>
+          <template v-slot:activator="{ on, attrs }">
+            <v-chip class="mb-0 mr-2" v-bind="attrs" v-on="on">
+              <v-icon class="mr-1">mdi-file-document-multiple</v-icon
+              >{{ papers }}
+            </v-chip>
+          </template>
+          <span>Papers</span>
+        </v-tooltip>
+      </v-chip-group>
       <v-btn href="https://psa2020.philsci.org" target="_blank" text>
         <span class="mr-2">PSA 2021</span>
         <v-icon>mdi-open-in-new</v-icon>
@@ -34,7 +77,13 @@
 </template>
 
 <script>
-import { paperCount, authorCount } from "./components/calendarData";
+import {
+  paperCount,
+  authorCount,
+  inPersonCount,
+  remoteCount,
+  hybridCount,
+} from "./components/calendarData";
 import MeetingCalendar from "./components/MeetingCalendar";
 
 export default {
@@ -47,6 +96,9 @@ export default {
   data: () => ({
     papers: paperCount,
     authors: authorCount,
+    inPersonCount,
+    remoteCount,
+    hybridCount,
   }),
 };
 </script>
