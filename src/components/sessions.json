@@ -23,11 +23,11 @@
     "end": "16:00:00",
     "abstract": "<p>Bayesian models are at the core of various successful research programs in philosophy of science and formal epistemology: they are used for reconstructing and better understanding scientific reasoning, but also for developing foundational theories of belief and decision-making under uncertainty. This symposium investigates how foundational and model-based conceptions of Bayesianism relate to each other, and how they might cross-fertilize each other. More specifically, we address this general question from three perspectives: theories of valid inductive inference, understanding Bayesian models as scientific models, and comparing Bayesian models to competitors. At the end, we combine these perspectives to explain the popularity of Bayesianism in various fields of philosophy and science.</p>",
     "track": "Confirmation and Evidence",
-    "venue": "Key Ballroom 11",
+    "venue": "Pickersgill",
     "format": "Hybrid Presentation",
     "subs": "Modeling Limitations versus the Limitations of a Model|Bayesian Philosophy of Science as Scientific Philosophy|Bayes, Here, There, but Not Everywhere|Commentary||",
     "authors": "Stephan Hartmann, Christopher Hitchcock, John D Norton, Michael Titelbaum, Jan Sprenger",
-    "moderator": ""
+    "moderator": "Prof. Darrell Rowbottom"
   },
   {
     "id": 13,
@@ -129,10 +129,10 @@
     "abstract": "<p>The philosophy of neuroscience has in recent decades been dominated by discussions of explanation and in particular of mechanistic explanation. This has produced significant insights into the kinds of causal knowledge that neuroscientific experiments can deliver. However, the focus on explanation has also arguably had a distorting effect on the field. For example, it has encouraged the tendency to lump together or subsume all neuroscientific techniques and models of interest under the heading of explanation (see, for example, debates over whether topological or dynamical \"explanations\" of neural phenomena are really deserving of the name). But the epistemic terrain of neuroscience is far more varied and interesting than this, and it includes knowledge-producing practices that go beyond explanation. Neuroscientific practice includes the development of tools and experimental systems, data analytic techniques, exploratory investigations, formal descriptive frameworks, predictive simulations, and new laboratory phenomena, as well as a host of clinical translational applications. While these may contribute to explanation, they are nevertheless distinct from it. This symposium aims to articulate the social, material, and normative characteristics of these non-explanatory neuroscientific practices, and to chart their interrelations.</p>",
     "track": "Philosophy of Neuroscience",
     "venue": "Key Ballroom 09",
-    "format": "Hybrid Presentation",
+    "format": "Remote Presentation",
     "subs": "The Mirage of Big-Data Phrenology|Exploratory Concept Formation and the Norms of Description in Neuroscientific Discovery|Assessing the Dynamics of Novel Tool Development: The Rodent Operant Touchscreen Chamber as a Case Study |The Predictive Turn In Neuroscience||",
     "authors": "Jackie Sullivan, Daniel Weiskopf, Philipp Haueis, Felipe De Brigard",
-    "moderator": ""
+    "moderator": "Dr. Jorge Morales"
   },
   {
     "id": 22,
@@ -177,7 +177,7 @@
     "format": "Hybrid Presentation",
     "subs": "Irreversible and Reversible Causation|Representations of Invariance in Human Causal Induction|Coherent Causal Control|Biological Machines: A Sober Defense||",
     "authors": "Lauren Ross, James Woodward, Mimi Liljeholm, Arnon Levy, Marcel Weber",
-    "moderator": ""
+    "moderator": "Daniel Kostic"
   },
   {
     "id": 25,
@@ -327,7 +327,7 @@
     "format": "Remote Presentation",
     "subs": "Two Paths to Skepticism about Animal Consciousness|Animal Consciousness and Animal Welfare|Felt Unpleasantness and the Measurement of Animal Suffering|Integrating Animal Consciousness into Welfare|Welfare and Animal Culture|",
     "authors": "Heather Browning, Jonathan Birch, Henry Shevlin, Eva Jablonka, Simon Fitzpatrick, Kristin Andrews",
-    "moderator": ""
+    "moderator": "Gui Sanchez de Oliveira"
   },
   {
     "id": 35,
@@ -338,8 +338,8 @@
     "end": "16:00:00",
     "abstract": "<p>Randomness plays important roles in statistical methods, simulations, randomized trials and other experimental practices, numerical approximation, and theorem-proving. The diverse talks in this session illustrate why randomness is a rich and important area for research in philosophy of science. Speakers examine a variety of epistemological roles of different kinds of randomness from a variety of perspectives, drawing implications for methodology, epistemology, and metaphysics. Talks in this session look at roles of randomness in experiments, simulations, and statistical inference. We discuss uses deterministic randomness to solve a problem concerning experimental testing in quantum mechanics, look at whether uses of pseudorandom number generators in simulations provide evidence for pseudorandomness in nature, consider the use of random sequences as the basis of priors in Bayesian methods, and examine ways to mitigate problems due to randomness in data. Talks in this session treat randomness as a property of sequences of events, as a characteristic of sources generating events, and as a characteristic of empirical data.</p>",
     "track": "Probability and Statistics",
-    "venue": "Key Ballroom 09",
-    "format": "Hybrid Presentation",
+    "venue": "",
+    "format": "Remote Presentation",
     "subs": "Randomization Posits and Fundamental Physics|On the Statistical Notion of \"Population\"|Randomness and Confirmation |Pseudorandomness in Simulations and Nature||",
     "authors": "Marshall Abrams, Antony Eagle, Wayne Myrvold, Barbara Osimani",
     "moderator": ""
@@ -387,7 +387,7 @@
     "format": "Hybrid Presentation",
     "subs": "A Non-Ideal Perspective on Algorithmic Fairness|Fairness in Data-Driven Decision-Making: A Causal Modeling Perspective|What’s Sex Got to Do with Machine Learning?|Risks of Compounding Injustices in Automated Recruiting|Racial Categories in Algorithmic Fairness: Methodological Issues and Recommendations|",
     "authors": "Sina Fazelpour, Maria De-Arteaga, Lily Hu, Emily Denton, Daniel Malinsky",
-    "moderator": ""
+    "moderator": "Dan Li"
   },
   {
     "id": 39,
@@ -399,10 +399,10 @@
     "abstract": "<p>Reconstructing geologic time-the 4.5 billion years of Earth's history-is a vast interdisciplinary scientific project raising a tangle of conceptual and methodological issues. Scientists have organized geologic time into a hierarchical set of units known as the Geological Time Scale (GTS). The GTS sets the temporal framework for measuring the timing and tempo of all major geological, biological, and climatic processes and events in Earth's history, and hence plays a foundational role in many sciences. The aim of this symposium is to explore some of the key philosophical issues involved in the reconstruction of geologic time-a topic that has been virtually unexplored by philosophers of science. This symposium will address methods for synchronizing the imperfect clocks of geologic time (Valde), strategies for reconstructing time from the missing stratigraphic record (Bokulich), conventionality versus naturalness in delimiting the units of geologic time (Witteveen), methodological insights from shallow-time stratigraphy (Santana), and the high scientific and social costs of failing to recognize the Anthropocene as a formal unit of the GTS (Bobadilla). This symposium marks a timely and important contribution to the rapidly growing interest in the philosophy of the historical and Earth sciences.</p>",
     "track": "Philosophy of Geology / Geophysics",
     "venue": "Armistead",
-    "format": "In-Person Presentation",
+    "format": "Hybrid Presentation",
     "subs": "Fossil and Molecular Clocks|Learning to Measure What Isn't There: The Problem of Missing Time|Golden Spikes, Silver Bullets, and the Ma(r)king of Chronostratigraphic Boundaries|Deep Sediments; Shallow Time|What is at Stake in the Formalization of a Chronostratigraphic Unit?  A Case Study on the Anthropocene|",
     "authors": "Alisa Bokulich, Hernán Bobadilla, Carlos Santana, Joeri Witteveen, Katherine Valde",
-    "moderator": ""
+    "moderator": "Beckett Sterner"
   },
   {
     "id": 40,
@@ -417,7 +417,7 @@
     "format": "Hybrid Presentation",
     "subs": "Maxwell and Speculation |The Darwinian Tree of Life Project: Heuristic and Aesthetic Roles for Speculation|Newton on Speculation|Moving Beyond Speculation: Testing Hypotheses with Computer Simulation|Speculation in Science and Metaphysics|The Nature and Status of Speculation in the Life Sciences Around 1800",
     "authors": "Richard Richards, Peter Achinstein, Bradford Skow, Wendy Parker, Jutta Schickore, William Harper",
-    "moderator": ""
+    "moderator": "Daniel Kostic"
   },
   {
     "id": 41,
@@ -432,7 +432,7 @@
     "format": "Hybrid Presentation",
     "subs": "Something from Nothing: ‘Non-discovery’ and Transformations in High Energy Experimental Physics at the Large Hadron Collider|Signalism vs. the Bsm Perspective: A Debate on the Role of Theory in Experimental Discovery|A Bayesian Perspective on the Search for Low Energy Supersymmetry|What Is This Thing Called Theory Space? ||",
     "authors": "Richard Dawid, Radin Dardashti, Sophie Ritson",
-    "moderator": ""
+    "moderator": "Brandon Boesch"
   },
   {
     "id": 42,
@@ -477,7 +477,7 @@
     "format": "Remote Presentation",
     "subs": "Unbiased Algorithms in a Biased Society? Epistemic Risk and Value Judgments in the Design of Recidivism-Prediction Tools|Value Transparency and Value-Ladenness in Machine Learning|Inductive Risk, Understanding, and Opaque Machine Learning Models|Against Model-Based Counterfactual Explanations||",
     "authors": "Rune Nyrup, emily sullivan, Kate Vredenburgh, Justin Biddle",
-    "moderator": ""
+    "moderator": "Dr. Marta Halina"
   },
   {
     "id": 45,
@@ -507,7 +507,7 @@
     "format": "Hybrid Presentation",
     "subs": "Why Trust Science?|Trust Issues|Forms of Trust in Science|Trust of Science as a Public Collective Good||",
     "authors": "Chris Haufe, Naomi Oreskes, Matthew Slater, Heidi Grasswick",
-    "moderator": ""
+    "moderator": "Ryan O'Loughlin"
   },
   {
     "id": 47,
@@ -567,7 +567,7 @@
     "format": "Remote Presentation",
     "subs": "Institutions, Forethought, and Scientists’ Responsibility for Social Justice|Critical Theory for Science|The Limits of Democratizing Science:  When Scientists Should Ignore the Public|Epistemic severing and epistemic trademarking. Two garden varieties of epistemic injustice in science||",
     "authors": "Michela Massimi, Daniel Hicks, Heather Douglas, Andrew Schroeder",
-    "moderator": ""
+    "moderator": "Cristian Larroulet Philippi"
   },
   {
     "id": 51,
@@ -582,7 +582,7 @@
     "format": "Hybrid Presentation",
     "subs": "Can Time Emerge?|Cosmology as Quantum Gravity Hydrodynamics, Spacetime Emergence and the Fate of Cosmological Singularities: Overview and Conceptual Implications|Singularity Resolution: The Case of the Vanishing Wavefunction|Dynamical Laws at the Big Bang||",
     "authors": "Niranjana Warrier, Christian Wuthrich, Nick Huggett, Ted Jacobson, Daniele Oriti",
-    "moderator": ""
+    "moderator": "Ed Slowik"
   },
   {
     "id": 52,
@@ -612,7 +612,7 @@
     "format": "In-Person Presentation",
     "subs": "Socially Responsible Science: Mapping the Terrain|Socially Responsible Science as Accountable Science|How to Identify Socially Responsible Research Endeavors?|Representation Without Reification||",
     "authors": "Inmaculada de Melo-Martin, Joyce C. Havstad, Martin Carrier, Kristen Intemann, Haixin Dang",
-    "moderator": ""
+    "moderator": "Dr. Julia Bursten"
   },
   {
     "id": 54,
@@ -654,7 +654,7 @@
     "abstract": "<p>Since its birth, cognitive science has taken inspiration from computer science, using state-of-art technologies as models for how the human mind works. Today, cognitive scientists are beginning to grapple with Deep Neural Nets, perhaps the most impressive and difficult to understand advances in computing thus far. The striking success of DNNs suggests that perhaps there are deep similarities between them and the human mind. However, DNNs display bizarre behaviors and their inner workings are (allegedly) inscrutable, which would seem to undermine their value as a model of the mind. </p><p>In this symposium, we will examine the status of machine learning models of cognition. First, supposing that the analogy is a probative one, we suggest that it sheds light on traditional philosophical controversies about concepts. Second, we will critically examine the evidence from adversarial examples that has been taken undermine the similarity between human and machine concepts. Lastly, we will discuss how tools used to investigate human minds can break open the \"black box\" of DNNs.</p><p>This investigation will introduce philosophers of science to cutting edge work in machine learning and cognitive science, and provide a fascinating case study of the use of model systems in science.</p>",
     "track": "Computer Simulation",
     "venue": "Key Ballroom 10",
-    "format": "In-Person Presentation",
+    "format": "Hybrid Presentation",
     "subs": "Taking a Machine’s Perspective|Machine Learning and Conceptual Complexity|Functional Intelligibility and Neural Network Models of the Brain|Interpreting Deep Learning's Susceptibility to Adversarial Examples|Learning Incommensurate Concepts |",
     "authors": "Hayley Clatterbuck, Cameron Buckner, Jens Kipper, Chaz Firestone, Rosa Cao",
     "moderator": ""
@@ -777,7 +777,7 @@
     "format": "In-Person Presentation",
     "subs": "Can Machines Learn How Clouds Work?:  The Epistemic Implications of Machine Learning Methods in Climate Science|Climate-Model Tuning and Predictivism|A Critical Analysis of the IPCC’s Methodology of Climate Change Detection and Attribution|Climate Models and the Irrelevance of Chaos||",
     "authors": "Mathias Frisch, Suzanne Kawamleh, Corey Dethier, Mason Majszak",
-    "moderator": ""
+    "moderator": "Aja Watkins"
   },
   {
     "id": 66,
@@ -867,7 +867,7 @@
     "format": "Hybrid Presentation",
     "subs": "Aims Approaches and the Challenge from Ibsen Predicaments |Feyerabend and the Paradox of Pursuit: Revisiting Values in Pursuitworthiness|Can Morally Superior Values Produce Beneficial Outcomes in Science?|||",
     "authors": "Jamie Shaw, Per Wikman-Svahn, Karoliina Pulkkinen, Soohyun Ahn",
-    "moderator": ""
+    "moderator": "Kevin Elliott"
   },
   {
     "id": 72,
@@ -912,7 +912,7 @@
     "format": "Hybrid Presentation",
     "subs": "Implementation as Resemblance|Dynamic Natural Kinds|Physical Computation: A Tale of Two Notions|||",
     "authors": "Andre Curtis-Trudel, Mark Bedau, Ioannis Votsis",
-    "moderator": ""
+    "moderator": "Boaz Miller"
   },
   {
     "id": 75,
@@ -942,7 +942,7 @@
     "format": "In-Person Presentation",
     "subs": "Historical Sciences in the Era of Climate Change|A Pastist Approach to Animal Behavior and the Paradox of Marine Ichnology |Measuring Time with Fossils: A Start-Up Problem in Stratigraphic Geology|||",
     "authors": "Max Dresow, Ali Mirza, Jason Zinser",
-    "moderator": ""
+    "moderator": "Alisa Bokulich"
   },
   {
     "id": 77,
@@ -972,7 +972,7 @@
     "format": "In-Person Presentation",
     "subs": "The Sex-Gender Distinction in Biomedical Research – A Response to Byrne and Bogardus|Machine Learning, Causation, and the Problem of Epistemic Opacity in Epidemiology|Wishful Intelligibility, Black Boxes, and Epidemiological Explanation|||",
     "authors": "Alexander Broadbent, Marina DiMarco, Char Brecevic",
-    "moderator": ""
+    "moderator": "Inmaculada de Melo-Martin"
   },
   {
     "id": 79,
@@ -1077,7 +1077,7 @@
     "format": "In-Person Presentation",
     "subs": "Idealizations and Partitions: A Defense of Robustness Analysis|Rationality for Real Agents|Inconsistent Idealizations and Inferentialism about Scientific Representation|||",
     "authors": "Daniel Herrmann, Armin Schulz, Gareth Fuller, Peter Tan",
-    "moderator": ""
+    "moderator": "Dominik Hangleiter"
   },
   {
     "id": 86,
@@ -1105,8 +1105,8 @@
     "track": "Scientific Models / Modeling",
     "venue": "",
     "format": "Remote Presentation",
-    "subs": "Three Epistemic Roles of Computational Modelling in Psychiatric Therapy|From RDoC to DSM:|Reconsidering Harm in Mental Disorders|||",
-    "authors": "Nicholas Zautra, Matteo Colombo, Marko Jurjako",
+    "subs": "From RDoC to DSM:|Reconsidering Harm in Mental Disorders||||",
+    "authors": "Nicholas Zautra, Marko Jurjako",
     "moderator": ""
   },
   {
@@ -1152,7 +1152,7 @@
     "format": "In-Person Presentation",
     "subs": "Joint Agency and the Uniquely Human Cooperation Hypothesis|Better Models of the Evolution of Cooperation through Situated Cognition|The Evolutionary Origins of Cooperation in the Hominin Lineage: A Critique of Boyd and Richerson’s Cultural Group Selection Account|||",
     "authors": "Archie Fields III, Patrick Forber, Stephen Downes, Jacob Neal",
-    "moderator": ""
+    "moderator": "Derek  Skillings"
   },
   {
     "id": 91,
@@ -1182,7 +1182,7 @@
     "format": "In-Person Presentation",
     "subs": "Cumulative Cultural Evolution and the Measures of Complexity|Content-Open Artifactual Mediation as a Selection Target in Human Evolution|Reflexivity, Functional Reference, and Modularity: Alternative Targets for Language Origins|||",
     "authors": "Travis LaCroix, Alejandro Gordillo García, Phillip Honenberger",
-    "moderator": ""
+    "moderator": "Thomas Reydon"
   },
   {
     "id": 93,
@@ -1197,7 +1197,7 @@
     "format": "In-Person Presentation",
     "subs": "Model Organisms for Studying Decision-Making: a Phylogenetically Expanded Perspective|Another Source of the Replication Crisis: A Mistaken Confidence in Data|Microaggressions and Objectivity: Experimental Measures and Phenomenology|||",
     "authors": "Edouard Machery, Linus Huang, Mikio Akagi",
-    "moderator": ""
+    "moderator": "Jonathan Tsou"
   },
   {
     "id": 94,
@@ -1212,7 +1212,7 @@
     "format": "Remote Presentation",
     "subs": "The Context of Plausibility|The Problem of Circular Theory Dependence in Measurement: Uncertainty to the Rescue|Tacking by Conjunction, Genuine Confirmation and Bayesian Convergence|Learning from the Shape of Data||",
     "authors": "Sarita Rosenstock, Christophe Malaterre, Gerhard Schurz, Kent Staley",
-    "moderator": ""
+    "moderator": "Soohyun Ahn"
   },
   {
     "id": 95,
@@ -1332,7 +1332,7 @@
     "format": "In-Person Presentation",
     "subs": "Circular Spaces and Privileged Times|Is the Holographic Principle a Principle of Quantum Gravity? |Energy Conditions in Theories of Modified Gravity|How to Make Presentism Consistent with Special Relativity|No Time for Time from No-Time|Suppressing Spacetime Emergence",
     "authors": "Craig Callender, Chris Arledge, Mark Balaguer, Ann C Thresher, Helen Meskhidze, Joshua Norton",
-    "moderator": ""
+    "moderator": "Ed Slowik"
   },
   {
     "id": 103,
@@ -1362,7 +1362,7 @@
     "format": "In-Person Presentation",
     "subs": "Structural Realism, Limiting Principles, and Naturalized Metaphysics|The Chasm Between Scientific and Analytic Metaphysics? A Case Study: Ontic Structural Realism Versus Ontological Nihilism|Structural Humility|||",
     "authors": "Chanwoo Lee, Jared Hanson-Park, Cruz Davis",
-    "moderator": ""
+    "moderator": "Holly Andersen"
   },
   {
     "id": 105,
@@ -1419,7 +1419,7 @@
     "abstract": "",
     "track": "Values in Science",
     "venue": "Key Ballroom 12",
-    "format": "In-Person Presentation",
+    "format": "Hybrid Presentation",
     "subs": "Nomic Vagueness|The Metaphysics of Chaos Theory|A Principle Explanation of Bell State Entanglement: Conservation per No Preferred Reference Frame|Non-Empirical Physics, String Theory, and Minimal Criteria|Infrared Cancellation and Measurement|",
     "authors": "W.M. Stuckey, Brett Park, Pablo Ruiz de Olano, Michael Miller, Eddy Keming Chen",
     "moderator": ""
@@ -1562,14 +1562,14 @@
   {
     "id": 119,
     "type": "Session",
-    "name": "SPSP/UA",
+    "name": "SPSP",
     "date": "2021-11-11",
     "start": "10:15:00",
     "end": "11:45:00",
     "abstract": "<p dir=\"ltr\">Pluralism and Integration in Human Cognitive and Behavioral Sciences</p><p dir=\"ltr\">Philosophical accounts of the structure of science or of individual scientific disciplines (e.g., biology) have either endorsed a pluralism about scientific methods and explanatory models, or argued for integrative relations among fields and scientific ideas. An important case in point is the scientific study of human cognition and behavior, which because of its attempts to explain human aggression, sexuality, or gender differences has potential policy implications and has witnessed public controversy. Recently, Helen Longino has prominently argued for a strong pluralism, by maintaining that the different approaches to the study of human behavior cannot be integrated because they are incommensurable.</p><p>This symposium both takes a critical look at arguments for pluralism and analyzes novel cases from neuroscience and human behavior research, with the aim of revealing the presence of integrative relations or the potential for future integration. Our case studies range from behavior genetics to the neuroscience of face recognition, radical embodied cognitive science, and neuropsychiatry. Several of these philosophical cases have been developed based on collaborative interactions with cognitive and behavioral scientists. </p>",
     "track": "",
     "venue": "Key Ballroom 02",
-    "format": "In-Person Presentation",
+    "format": "Hybrid Presentation",
     "subs": "Toward a More Fine-Grained and Diverse Methodological Landscape  of Human Behavior Research|Convergent Perspectivism|Tales of Brains and Behavior:  A Pluralist Integration in Radical Embodied Cognitive Scienc|Integrating Methods in the Human Behavioral Sciences:  Implications for Scientific Pluralism||",
     "authors": "Ingo Brigandt, Vicente Raja, Kathryn Plaisance, Nina Atanasova",
     "moderator": "Ingo Brigandt"
@@ -1812,7 +1812,7 @@
     "format": "Hybrid Presentation",
     "subs": "",
     "authors": "Lucas Matthews, Jonathan Livengood, Kate Lynch, Eric Turkheimer",
-    "moderator": ""
+    "moderator": "Stephen Downes"
   },
   {
     "id": 143,
