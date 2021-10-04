@@ -88,6 +88,12 @@ catMap.set("Reception", {
   color: "red",
 });
 
+catMap.set("Services", {
+  name: "Services",
+  icon: "mdi-party-popper",
+  color: "red",
+});
+
 class Event {
   constructor(
     name,
@@ -151,6 +157,8 @@ class Event {
       this.countFormat(format);
       return format;
     }
+
+    console.log(this.name);
     if (this.name === "Coffee Break") return "Coffee Break";
     if (this.name === "Poster Forum and Reception")
       return "Poster Forum and Reception";
@@ -167,7 +175,7 @@ class Event {
     if (!authors) return null;
 
     const papersAndAuthors = authors
-      .filter((author) => author !== "")
+      .filter(author => author !== "")
       .map((author, idx) => {
         const isPaper = papers && papers[idx];
         isPaper && paperCount++;
@@ -181,7 +189,7 @@ class Event {
   }
 }
 
-export const calData = cal.map((session) => {
+export const calData = cal.map(session => {
   const start =
     session.date + "T" + session.start.padStart(8, "0") + ".000-05:00";
   const end = session.date + "T" + session.end.padStart(8, "0") + ".000-05:00";
