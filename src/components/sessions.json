@@ -23,11 +23,11 @@
     "end": "16:00:00",
     "abstract": "<p>Bayesian models are at the core of various successful research programs in philosophy of science and formal epistemology: they are used for reconstructing and better understanding scientific reasoning, but also for developing foundational theories of belief and decision-making under uncertainty. This symposium investigates how foundational and model-based conceptions of Bayesianism relate to each other, and how they might cross-fertilize each other. More specifically, we address this general question from three perspectives: theories of valid inductive inference, understanding Bayesian models as scientific models, and comparing Bayesian models to competitors. At the end, we combine these perspectives to explain the popularity of Bayesianism in various fields of philosophy and science.</p>",
     "track": "Confirmation and Evidence",
-    "venue": "Pickersgill",
-    "format": "Hybrid Presentation",
+    "venue": "",
+    "format": "Remote Presentation",
     "subs": "Modeling Limitations versus the Limitations of a Model|Bayesian Philosophy of Science as Scientific Philosophy|Bayes, Here, There, but Not Everywhere|Commentary||",
     "authors": "Stephan Hartmann, Christopher Hitchcock, John D Norton, Michael Titelbaum, Jan Sprenger",
-    "moderator": "Prof. Darrell Rowbottom"
+    "moderator": ""
   },
   {
     "id": 13,
@@ -128,7 +128,7 @@
     "end": "15:00:00",
     "abstract": "<p>The philosophy of neuroscience has in recent decades been dominated by discussions of explanation and in particular of mechanistic explanation. This has produced significant insights into the kinds of causal knowledge that neuroscientific experiments can deliver. However, the focus on explanation has also arguably had a distorting effect on the field. For example, it has encouraged the tendency to lump together or subsume all neuroscientific techniques and models of interest under the heading of explanation (see, for example, debates over whether topological or dynamical \"explanations\" of neural phenomena are really deserving of the name). But the epistemic terrain of neuroscience is far more varied and interesting than this, and it includes knowledge-producing practices that go beyond explanation. Neuroscientific practice includes the development of tools and experimental systems, data analytic techniques, exploratory investigations, formal descriptive frameworks, predictive simulations, and new laboratory phenomena, as well as a host of clinical translational applications. While these may contribute to explanation, they are nevertheless distinct from it. This symposium aims to articulate the social, material, and normative characteristics of these non-explanatory neuroscientific practices, and to chart their interrelations.</p>",
     "track": "Philosophy of Neuroscience",
-    "venue": "Key Ballroom 09",
+    "venue": "",
     "format": "Remote Presentation",
     "subs": "The Mirage of Big-Data Phrenology|Exploratory Concept Formation and the Norms of Description in Neuroscientific Discovery|Assessing the Dynamics of Novel Tool Development: The Rodent Operant Touchscreen Chamber as a Case Study |The Predictive Turn In Neuroscience||",
     "authors": "Jackie Sullivan, Daniel Weiskopf, Philipp Haueis, Felipe De Brigard",
@@ -146,7 +146,7 @@
     "venue": "Key Ballroom 11",
     "format": "Hybrid Presentation",
     "subs": "Abandoning ‘Trust’ to Foster Community Engagement|Interaction and Pluralism in a Conflictual Context|Involved Philosophy: An Initial Framework for Community-Academia Interaction|Climate Resilience and Community Engagement||",
-    "authors": "Michael Weisberg, Ayelet Shavit, Helen Longino, Rachel Ankeny",
+    "authors": "Michael Weisberg, Ayelet Shavit, Helen E Longino, Rachel Ankeny",
     "moderator": "Serife Tekin"
   },
   {
@@ -183,13 +183,13 @@
     "id": 25,
     "type": "Session",
     "name": "The Significance of Quantization Procedures",
-    "date": "2021-11-11",
-    "start": "13:00:00",
-    "end": "15:00:00",
+    "date": "2021-11-13",
+    "start": "14:00:00",
+    "end": "16:00:00",
     "abstract": "<p>Philosophers have often ignored or undervalued the importance of the quantization procedures that serve as methods to construct new quantum theories. However, recent decades have seen major developments in the mathematical tools used for quantization within physics communities. In light of these developments, this symposium aims to reassess the status of quantization and investigate its foundational significance. The participants will discuss and compare the variety of mathematical tools that have been developed while exploring their relation with standing philosophical issues. The symposium aims to (i) explore different points of view concerning the relevance of quantization procedures to questions of inter-theoretic reduction between classical and quantum mechanics, (ii) consider how different approaches to understanding the emergence of classical behavior are influenced by background assumptions concerning realism or anti-realism in the interpretation of quantum mechanics, and (iii) probe the extent to which quantization methods can aid in the interpretation and ontology of quantum theories, especially concerning the nature of charge and particles in field theories.</p>",
     "track": "Philosophy of Physics - quantum mechanics",
-    "venue": "Key Ballroom 01",
-    "format": "In-Person Presentation",
+    "venue": "Key Ballroom 12",
+    "format": "Hybrid Presentation",
     "subs": "On the Singularity of the Classical Limit|Deformation Quantization and the Emergence of Particles from Quantum Field Theory|Viewing Quantum Charge from the Classical Vantage Point|Decoherence and Deformation Quantization: Complementary or Rival Explanations of Classical Behavior?||",
     "authors": "Benjamin Feintzeig, Marian J. R. Gilton, Joshua Rosaler, Jeremy Steeger",
     "moderator": "Samuel Fletcher"
@@ -203,8 +203,8 @@
     "end": "15:00:00",
     "abstract": "<p>Mathematical models developed to advance knowledge in one scientific discipline are sometimes applied in another to study a different subject matter. This transdisciplinary aspect of scientific modeling has been the center of philosophical discussion concerned with knowledge transfer. While the parlance of \"transfer\" conveys a conservative process in nature, a growing number of case studies suggests that modifying the body of knowledge or the subject matter to which it applies is indispensable to a satisfactory trans-domain transfer. There is thus a need to address both the conservation and adaptation aspects in the cross-disciplinary transfer of models and their associated knowledge. Tackling this issue, the first two talks clarify and refine notions of \"templates\" for analyzing model transfer. The last two talks focus on the process and the practice of circulating models as templates across disciplines. On the whole, the five speakers-four philosophers of science and a practicing scientist-present an all-round perspective of how scientists are motivated to transfer models, but also appear to modify the knowledge associated with them in the process.</p>",
     "track": "Scientific Models / Modeling",
-    "venue": "Key Ballroom 02",
-    "format": "Hybrid Presentation",
+    "venue": "",
+    "format": "Remote Presentation",
     "subs": "Transdisciplinary Templates, Models, and Machine Learning|Travelling Waves: Why and How to Diversify the Role of Templates in Transdisciplinary Modelling|Crossing Domains: The Role of the Translator in the Spread of Scientific Innovations |Tinkering with the Vocabulary of Games: from the Economy to Cancer||",
     "authors": "Chia-Hua Lin, Paul Humphreys, Catherine Herfeld, Artem Kaznatcheev, Wybo Houkes",
     "moderator": ""
@@ -222,7 +222,7 @@
     "format": "Hybrid Presentation",
     "subs": "Cumulative Advantage and the Incentive to Commit Fraud in Science|Intervention and Backfire in the Replication Crisis|Scientific Progress and the Courtroom|Community Characteristics and the Spread of Better Scientific Methods|The Dynamics of Journal Prestige|",
     "authors": "Cailin O'Connor, Aydin Mohseni, Remco Heesen, Kevin Zollman, Paul Smaldino",
-    "moderator": ""
+    "moderator": "Sophia Crüwell"
   },
   {
     "id": 28,
@@ -233,11 +233,11 @@
     "end": "11:45:00",
     "abstract": "<p>The open science movement is attracting significant attention from the scientific community in an effort to increase the reliability of science, promote scientific innovation, and make scientific information widely available to non-specialists. It encompasses a wide variety of initiatives, such as publishing in open-access venues, making study data and methods publicly available, pre-registering study designs in trial registries, encouraging the publication of negative as well as positive results, and making peer review reports publicly available.</p><p> </p><p>As this movement develops, philosophers of science interested in doing socially engaged work have important opportunities to help shape open science in ways that maximize its strengths and minimize its weaknesses. This symposium focuses especially on four aspects of the open science movement that merit philosophical consideration: the importance of fostering epistemic diversity and pluralistic confrontation within open science, the challenges of implementing pre-registration as a strategy for promoting replicability, the potential for using preprint repositories to certify research quality while promoting openness, and the steps needed to fulfill the open science movement's goal of facilitating better decision making by non-specialists.</p>",
     "track": "Science policy",
-    "venue": "Key Ballroom 04",
-    "format": "Hybrid Presentation",
+    "venue": "",
+    "format": "Remote Presentation",
     "subs": "Open Science and Epistemic Diversity: Friends or Foes? |Openness About Openness: Why Pre-registration Is Failing and What To Do About It |Certify Pre-Prints|Making Open Science Work for Non-Specialists|Commentary|",
     "authors": "Kevin Elliott, Patricia Soranno, Carole Lee, Sabina Leonelli, Felipe Romero",
-    "moderator": ""
+    "moderator": "Jackie Sullivan"
   },
   {
     "id": 29,
@@ -251,7 +251,7 @@
     "venue": "Armistead",
     "format": "In-Person Presentation",
     "subs": "Biological Essentialism and the Projectability of Psychiatric Categories|Pluralism in Psychiatry Encompasses both Natural and Practical Kinds|Pluralism and Progress in Psychiatry|Reclassifying Body Dysmorphic Disorder:  A Causal Model Informed by the Patient’s Perspective|Participatory Intersubjective Objectivity in Psychiatric Epistemology|Commentary",
-    "authors": "Jonathan Tsou, Serife Tekin, Robyn Bluhm, Miriam Solomon, Peter Zachar, Muhammad Ali Khalidi, Amy MacKinnon",
+    "authors": "Jonathan Tsou, Serife Tekin, Robyn Bluhm, MIRIAM SOLOMON, Peter Zachar, Muhammad Ali Khalidi, Amy MacKinnon",
     "moderator": "Justin Garson"
   },
   {
@@ -290,7 +290,7 @@
     "name": "The Major Transitions in Cognitive Evolution",
     "date": "2021-11-13",
     "start": "14:00:00",
-    "end": "16:45:00",
+    "end": "16:00:00",
     "abstract": "<p>As we come to appreciate the wealth and diversity of intelligences, the challenge becomes how to make sense of this complexity. How can we comprehend it in a systematic way? In this symposium, we explore the idea that one important piece of the puzzle involves treating the evolution of cognition as a series of major transitions. Each transition involved a qualitative change in information flow within nervous systems. Each transition opened up new cognitive capacities, while transforming the power and scope of existing cognitive functions. We consider several aspects of the major transitions framework: the role of learning, brain size, and resource constraints on the evolution of nervous systems; the relationship between major transitions and behavioral innovation; and the implications of major transitions on methods in psychology. This symposium contributes to contemporary debates in general philosophy of science, philosophy of biology and philosophy of cognitive science while drawing on work in evolutionary biology, computational neuroscience and comparative psychology.</p>",
     "track": "Philosophy of Cognitive Science",
     "venue": "",
@@ -312,7 +312,7 @@
     "format": "Remote Presentation",
     "subs": "L. A. Paul’s Transformative Experience: Mentalism and Imagination in Decision Theory|The Transformative Experience of Education|Awareness Growth and the Limits of Rational Planning|Awareness of Unawareness When Unknowns Are Not Simply Unknowns||",
     "authors": "Saira Khan, Richard Pettigrew, Marie-Louise Viero, Katie Steele, H. Orri Stefansson",
-    "moderator": ""
+    "moderator": "Dr. Daniel Burnston"
   },
   {
     "id": 34,
@@ -327,7 +327,7 @@
     "format": "Remote Presentation",
     "subs": "Two Paths to Skepticism about Animal Consciousness|Animal Consciousness and Animal Welfare|Felt Unpleasantness and the Measurement of Animal Suffering|Integrating Animal Consciousness into Welfare|Welfare and Animal Culture|",
     "authors": "Heather Browning, Jonathan Birch, Henry Shevlin, Eva Jablonka, Simon Fitzpatrick, Kristin Andrews",
-    "moderator": "Gui Sanchez de Oliveira"
+    "moderator": ""
   },
   {
     "id": 35,
@@ -353,8 +353,8 @@
     "end": "16:00:00",
     "abstract": "<p>Our symposium presents conceptual and formal results on epistemological aspects of social deliberation. It focuses on situations where experts record the opinions of others and adapt their own opinion accordingly, or where a decision maker determines her opinion on the basis of the opinions in a group of experts. The symposium consists of four papers that jointly span the space between psychological studies of deliberation and formal philosophical models of it. All papers are aimed at rationalizing deliberative practices and finding constraints on how rational social learning can obtain. The symposium has a high degree of internal coherence as it builds on a series of workshops held over the past few years within the \"ColAForm\" project, a research network on Collective Attitudes Formation. While focused on a specific set of themes in formal social epistemology, our symposium references a much wider research tradition in social epistemology. Insight into the rationality of social deliberation is highly relevant to studies of the social dimension of scientific inquiry, and hence to the philosophy of science, especially in its focus on science as a social process.</p>",
     "track": "Formal Epistemology",
-    "venue": "Key Ballroom 11",
-    "format": "Hybrid Presentation",
+    "venue": "",
+    "format": "Remote Presentation",
     "subs": "The Role of Reliability Updating in Belief Polarization on Mixed Evidence|Extremizing: Social Learning Meets Inductive Logic|Support for Geometric Pooling|Weighted Averaging and Testimonial Updates||",
     "authors": "Jan-Willem Romeijn, Jean Baccelli, Leah Henderson, Mikaël Cozic, Denis Bonnay",
     "moderator": ""
@@ -462,7 +462,7 @@
     "format": "Hybrid Presentation",
     "subs": "Philosophy in Science: Definition and Boundaries|My Philosophical Interventions in Statistics|Philosophical Interventions in Science –  a Strategy and a Case Study (Parsimony)|How Evolutionary Science and Philosophy Can Collaborate to Redefine Disease||",
     "authors": "Thomas Pradeu, Deborah Mayo, Maël Lemoine, Elliott Sober, Randolph Nesse, Paul Griffiths",
-    "moderator": ""
+    "moderator": "Ruobin Gong"
   },
   {
     "id": 44,
@@ -477,7 +477,7 @@
     "format": "Remote Presentation",
     "subs": "Unbiased Algorithms in a Biased Society? Epistemic Risk and Value Judgments in the Design of Recidivism-Prediction Tools|Value Transparency and Value-Ladenness in Machine Learning|Inductive Risk, Understanding, and Opaque Machine Learning Models|Against Model-Based Counterfactual Explanations||",
     "authors": "Rune Nyrup, emily sullivan, Kate Vredenburgh, Justin Biddle",
-    "moderator": "Dr. Marta Halina"
+    "moderator": ""
   },
   {
     "id": 45,
@@ -535,8 +535,8 @@
     "track": "Philosophy of Climate Science",
     "venue": "Key Ballroom 01",
     "format": "In-Person Presentation",
-    "subs": "Why Climate Data Is Big|A Defense of the Representational Account of Data|Big Data and Climate Science|The Ontology of Big Data in Climate Science||",
-    "authors": "Seth McGinnis, Elisabeth Lloyd, Stuart Gluck, Greg Lusk",
+    "subs": "Why Climate Data Is Big|A Defense of the Representational Account of Data|The Ontology of Big Data in Climate Science|||",
+    "authors": "Seth McGinnis, Stuart Gluck, Greg Lusk",
     "moderator": ""
   },
   {
@@ -548,8 +548,8 @@
     "end": "17:15:00",
     "abstract": "<p>Precision medicine is promised to dramatically transform medicine and health care through data-intensive strategies that enable individualized treatments and disease prevention. Successful examples of targeted treatments in the context of certain cancers and rare diseases are often taken to illustrate the revolutionary potential of precision medicine in other contexts. This symposium critically examines the assumptions underlying this expectation. Precision medicine is often promoted as a unified solution to current challenges in health care without recognition of the complexities of the various contexts of implementation. One example is the ideal of \"patient empowerment\" in primary care, where risk information is envisioned to enable patients to take control over future health outcomes. This vision, however, presupposes quite significant epistemic assumptions, and implies a shift in the organization of health care systems. This includes changes in the relationship between doctors and patients, as well as in their respective roles and responsibilities. The symposium offers an overview of how precision medicine has developed as a promissory science, recently distancing itself from \"personalized medicine\", and calls for a calibration of expectations according to existing evidence of health benefits.</p>",
     "track": "Philosophy of Medicine",
-    "venue": "Armistead",
-    "format": "In-Person Presentation",
+    "venue": "",
+    "format": "Remote Presentation",
     "subs": "Scoping Precision Medicine|Precision Medicine and the Ideal of Patient Empowerment|Impact of Precision Medicine on Physician-Patient Relationships|Personalized Medicine Wasn't Personal; Precision Medicine Isn't Precise ||",
     "authors": "Jim Tabery, Sara Green, Paul Appelbaum, Kathryn Tabb",
     "moderator": "Luciana Garbayo"
@@ -581,8 +581,8 @@
     "venue": "Key Ballroom 04",
     "format": "Hybrid Presentation",
     "subs": "Can Time Emerge?|Cosmology as Quantum Gravity Hydrodynamics, Spacetime Emergence and the Fate of Cosmological Singularities: Overview and Conceptual Implications|Singularity Resolution: The Case of the Vanishing Wavefunction|Dynamical Laws at the Big Bang||",
-    "authors": "Niranjana Warrier, Christian Wuthrich, Nick Huggett, Ted Jacobson, Daniele Oriti",
-    "moderator": "Ed Slowik"
+    "authors": "Niranjana Warrier, Christian Wüthrich, Nick Huggett, Ted Jacobson, Daniele Oriti",
+    "moderator": "Francesca Vidotto"
   },
   {
     "id": 52,
@@ -596,8 +596,8 @@
     "venue": "Key Ballroom 03",
     "format": "Hybrid Presentation",
     "subs": "Is There a Positive Argument for Instrumentalism?|An Instrumentalist Account of Scientific Understanding|Semantic Instrumentalism Revived: An Invitation to Scientific Realists|Lessons from the Strawman Instrumentalist||",
-    "authors": "Darrell Rowbottom, Julian Reiss, Stathis Psillos, K. Brad Wray",
-    "moderator": ""
+    "authors": "Darrell Rowbottom, Julian Reiss, Stathis Psillos, K Brad Wray",
+    "moderator": "Jennifer Whyte"
   },
   {
     "id": 53,
@@ -611,7 +611,7 @@
     "venue": "Key Ballroom 02",
     "format": "In-Person Presentation",
     "subs": "Socially Responsible Science: Mapping the Terrain|Socially Responsible Science as Accountable Science|How to Identify Socially Responsible Research Endeavors?|Representation Without Reification||",
-    "authors": "Inmaculada de Melo-Martin, Joyce C. Havstad, Martin Carrier, Kristen Intemann, Haixin Dang",
+    "authors": "Inmaculada De Melo-Martin, Joyce C. Havstad, Martin Carrier, Kristen Intemannq, Haixin Dang",
     "moderator": "Dr. Julia Bursten"
   },
   {
@@ -627,7 +627,7 @@
     "format": "In-Person Presentation",
     "subs": "How “Slow Infections” (Slowly) Paved the Way to “Prions\"|Renormalization as a Phantom Concept|‘Species’ Without Species: A Patchwork Approach to Thinking About ‘Species’ Concepts|Essentially Dynamic Concepts and the Case of Homology||",
     "authors": "Aaron Novick, Zachary Shifrel, Corinne Bloch-Mullins, Amesh Adalja, Devin Gouvêa",
-    "moderator": ""
+    "moderator": "Janella Baxter"
   },
   {
     "id": 55,
@@ -687,7 +687,7 @@
     "format": "Hybrid Presentation",
     "subs": "Don’t Publish, So That We Don’t Perish: the Case For and Against the Use of Neural Networks to Detect Sexual Orientation.  |Science in the Service of Cultural Norms - the Pathologization of Female Desire|Sex Differences in Sexual Desire|Sexuality and Genderality:  On Personal and Conjoined Embodiment|Commentator|",
     "authors": "Katarzyna Grunt-Mejer, Nicole Vincent, Jacob Stegenga, John Dupre, Andreas De Block, Erin Nash",
-    "moderator": ""
+    "moderator": "Char Brecevic"
   },
   {
     "id": 59,
@@ -805,8 +805,8 @@
     "track": "Confirmation and Evidence",
     "venue": "Key Ballroom 02",
     "format": "Hybrid Presentation",
-    "subs": "Epistemic Risk in the Triangulation Argument for Implicit Attitudes|Representational Risk|Assessing the Consequences of P-hacking using Expected Utility and the Argument from Inductive Risk|||",
-    "authors": "Adrian Erasmus, Stephanie Harvard, Morgan Thompson",
+    "subs": "Epistemic Risk in the Triangulation Argument for Implicit Attitudes|Assessing the Consequences of P-hacking using Expected Utility and the Argument from Inductive Risk||||",
+    "authors": "Adrian Erasmus, Morgan Thompson",
     "moderator": ""
   },
   {
@@ -819,7 +819,7 @@
     "abstract": "",
     "track": "Mechanisms",
     "venue": "Key Ballroom 12",
-    "format": "In-Person Presentation",
+    "format": "Hybrid Presentation",
     "subs": "A Novel Account of Activities for the Philosophy of Mechanisms|Abduction and Composition|Mechanistic Reductionism|||",
     "authors": "Tudor Baetu, Kenneth Aizawa, Kalewold Kalewold",
     "moderator": ""
@@ -882,7 +882,7 @@
     "format": "In-Person Presentation",
     "subs": "AI Inferences and Bad Data in Oncology|N-of-1 Cancer Trials: A Standardization & Meta-Analysis Framework|Squaring the Extrapolator's Circle|||",
     "authors": "Jonathan Fuller, Jonathon Abdal, Alison McConwell, Sarah Wieten",
-    "moderator": ""
+    "moderator": "Alan Love"
   },
   {
     "id": 73,
@@ -938,8 +938,8 @@
     "end": "17:45:00",
     "abstract": "",
     "track": "Philosophy of Geology / Geophysics",
-    "venue": "Key Ballroom 01",
-    "format": "In-Person Presentation",
+    "venue": "Key Ballroom 11",
+    "format": "Hybrid Presentation",
     "subs": "Historical Sciences in the Era of Climate Change|A Pastist Approach to Animal Behavior and the Paradox of Marine Ichnology |Measuring Time with Fossils: A Start-Up Problem in Stratigraphic Geology|||",
     "authors": "Max Dresow, Ali Mirza, Jason Zinser",
     "moderator": "Alisa Bokulich"
@@ -972,7 +972,7 @@
     "format": "In-Person Presentation",
     "subs": "The Sex-Gender Distinction in Biomedical Research – A Response to Byrne and Bogardus|Machine Learning, Causation, and the Problem of Epistemic Opacity in Epidemiology|Wishful Intelligibility, Black Boxes, and Epidemiological Explanation|||",
     "authors": "Alexander Broadbent, Marina DiMarco, Char Brecevic",
-    "moderator": "Inmaculada de Melo-Martin"
+    "moderator": "Inmaculada De Melo-Martin"
   },
   {
     "id": 79,
@@ -985,8 +985,8 @@
     "track": "Philosophy of Neuroscience",
     "venue": "Key Ballroom 09",
     "format": "Hybrid Presentation",
-    "subs": "Explaining the Good as Well as the Bad? Mechanistic Understanding in the Gene-Environment Research on Differential Plasticity|Engineering Artificial Model Organisms: A Role for Deep Neural Networks in Neuroscience?|“It Takes Two to Make a Thing Go Right”: The Coevolution of Technological and Mathematical Tools in Neuroscience|||",
-    "authors": "Luis Favela, Olesya Bondarenko, Mahi Hardalupas",
+    "subs": "Explaining the Good as Well as the Bad? Mechanistic Understanding in the Gene-Environment Research on Differential Plasticity|“It Takes Two to Make a Thing Go Right”: The Coevolution of Technological and Mathematical Tools in Neuroscience||||",
+    "authors": "Luis Favela, Olesya Bondarenko",
     "moderator": ""
   },
   {
@@ -1002,7 +1002,7 @@
     "format": "In-Person Presentation",
     "subs": "Symmetry and Detectability as Physical Concepts|Antiunitary Equivalence|On The Epistemological Status of Unitarily Inequivalent Representations|||",
     "authors": "Abigail Holmes, James Fraser, Noel Swanson",
-    "moderator": ""
+    "moderator": "Nick Huggett"
   },
   {
     "id": 81,
@@ -1017,7 +1017,7 @@
     "format": "In-Person Presentation",
     "subs": "When is Dissent Normatively Inappropriate?‎|On the Limits of Cultural Relativism as a Debiasing Method|Mechanical Jurisprudence and Domain Distortion: How Predictive Algorithms Warp the Law|||",
     "authors": "Boaz Miller, David Teira, Per Wikman-Svahn, Dasha Pruss",
-    "moderator": ""
+    "moderator": "Laura Cupples"
   },
   {
     "id": 82,
@@ -1029,7 +1029,7 @@
     "abstract": "",
     "track": "Values in Science",
     "venue": "Key Ballroom 12",
-    "format": "In-Person Presentation",
+    "format": "Hybrid Presentation",
     "subs": "A Perspectival Solution to the Problem of Inconsistent Results in Data Research|Data Integration without Unification|Exploitation, or Amelioration? Dueling Pictures of Data-Scientific Rationality. |||",
     "authors": "Konstantin Genin, Mariusz Maziarz, Beckett Sterner",
     "moderator": ""
@@ -1061,7 +1061,7 @@
     "venue": "Key Ballroom 09",
     "format": "Hybrid Presentation",
     "subs": "How Much Change is Too Much Change? Rethinking the Reasons Behind the Lack of Reception to Brouwer’s Intuitionism|Du Châtelet on the Need for Mathematics in Physics|Emergent Space Ontologies in the Early Modern Period|||",
-    "authors": "Ed Slowik, Kati Kish Bar-On, Aaron Wells",
+    "authors": "Edward Slowik, Kati Kish Bar-On, Aaron Wells",
     "moderator": "Areins Pelayo"
   },
   {
@@ -1092,7 +1092,7 @@
     "format": "Hybrid Presentation",
     "subs": "An Epistemic Theory for Patient-Reported Outcome Measures|Biomarkers||||",
     "authors": "Marco Nathan, Leah McClimans",
-    "moderator": ""
+    "moderator": "Char Brecevic"
   },
   {
     "id": 87,
@@ -1107,7 +1107,7 @@
     "format": "Remote Presentation",
     "subs": "From RDoC to DSM:|Reconsidering Harm in Mental Disorders||||",
     "authors": "Nicholas Zautra, Marko Jurjako",
-    "moderator": ""
+    "moderator": "Andrew Evans"
   },
   {
     "id": 88,
@@ -1122,7 +1122,7 @@
     "format": "Hybrid Presentation",
     "subs": "Gaining Traction: Foothold Concepts and Exemplars in Conceptual Change|On Measurement Scales: Neither Ordinal nor Interval? |Solving the Problem of Scientific Model Transfer by Transfering a Scientific Model of Problem Solving|Close Encounters with Scientific Analogies of the Third Kind||",
     "authors": "Cristian Larroulet Philippi, Francesco Nappo, William Goodwin, Justin Price",
-    "moderator": ""
+    "moderator": "Michael Miller"
   },
   {
     "id": 89,
@@ -1149,7 +1149,7 @@
     "abstract": "",
     "track": "Philosophy of Biology - evolution",
     "venue": "Armistead",
-    "format": "In-Person Presentation",
+    "format": "Hybrid Presentation",
     "subs": "Joint Agency and the Uniquely Human Cooperation Hypothesis|Better Models of the Evolution of Cooperation through Situated Cognition|The Evolutionary Origins of Cooperation in the Hominin Lineage: A Critique of Boyd and Richerson’s Cultural Group Selection Account|||",
     "authors": "Archie Fields III, Patrick Forber, Stephen Downes, Jacob Neal",
     "moderator": "Derek  Skillings"
@@ -1241,7 +1241,7 @@
     "venue": "",
     "format": "Remote Presentation",
     "subs": "Populations and Machine-Like Decomposition|Towards Mechanism 2.1: A Dynamic Causal Approach|Abstraction Is (Much) More Than Omission: Alon’s Network Motifs Reconsidered|Category-Theoretic Account of Constitutive Relevance||",
-    "authors": "Dr. John Matthewson, Andrea Loettgers, Wei Fang, Jinyeong Gim",
+    "authors": "John Matthewson, Andrea Loettgers, Wei Fang, Jinyeong Gim",
     "moderator": "Paul Kelly"
   },
   {
@@ -1257,7 +1257,7 @@
     "format": "Remote Presentation",
     "subs": "Applying Unrigorous Mathematics: Path Integrals in Quantum Theory|Articulating Boltzmannian Non-Equilibrium through Scalar Fields|The Substantial Role of Weyl Symmetry in Deriving General Relativity from String Theory|How Anti-Humeans Can Embrace a Thermodynamic Reduction of Time's Causal Arrow||",
     "authors": "Roman Frigg, Eli Lichtenstein, Colin McCullough-Benner, John Dougherty",
-    "moderator": ""
+    "moderator": "Prof. David Wallace"
   },
   {
     "id": 98,
@@ -1285,9 +1285,9 @@
     "track": "Causality",
     "venue": "Key Ballroom 09",
     "format": "Hybrid Presentation",
-    "subs": "Boolean Causal Inference and Causal Minimality Condition|Variable Definition and Independent Components|Distinctness and Extensional Independence|Causation and the Problem of Disagreement|Structural Decision Theory|Underdeterministic Causation",
+    "subs": "Distinctness and Extensional Independence|Underdeterministic Causation|Causation and the Problem of Disagreement|Structural Decision Theory|Variable Definition and Independent Components|Boolean Causal Inference and Causal Minimality Condition",
     "authors": "Holly Andersen, Jiji Zhang, Enno Fischer, Tung-Ying Wu, Tom Wysocki, Lorenzo Casini",
-    "moderator": ""
+    "moderator": "David Kinney"
   },
   {
     "id": 100,
@@ -1299,21 +1299,21 @@
     "abstract": "",
     "track": "Values in Science",
     "venue": "Pickersgill",
-    "format": "In-Person Presentation",
+    "format": "Hybrid Presentation",
     "subs": "Engineering Roles and Identities in the Scientific Community: Toward Participatory Justice|Growing Knowledge: Epistemic Objects in Agricultural Extension Work|Structural Causes of Citation Blindness|Participation and Objectivity|The Diversity-Ability Trade-Off in Scientific Problem Solving|Creativity in the Social Epistemology of Science",
     "authors": "Dr. Julia Bursten, Catherine Kendig, Samuli Reijula, Jaakko Kuorikoski, Mike Schneider, Vitaly Pronskikh, Hannah Rubin, Inkeri Koskinen",
-    "moderator": ""
+    "moderator": "Matthew Brown"
   },
   {
     "id": 101,
     "type": "Session",
-    "name": "Probability and Statistics",
-    "date": "2021-11-13",
+    "name": "Probability and Statistics I",
+    "date": "2021-11-12",
     "start": "9:00:00",
-    "end": "12:15:00",
+    "end": "10:00:00",
     "abstract": "",
     "track": "Probability and Statistics",
-    "venue": "Key Ballroom 02",
+    "venue": "Key Ballroom 07-08",
     "format": "Hybrid Presentation",
     "subs": "A Dilemma for Solomonoff Prediction|From Laplace's Equipossibility to Accuracy-Based Arguments for the Principle of Indifference.|The Borel-Kolmogorov Paradox Is Your Paradox Too: A Puzzle for Conditional Physical Probability|Imprecise Chance and Chance-Credence Coordination|Openness and Reproducibility from a Model-Centric View|Pursuit of Predictive Accuracy: Seven Worries",
     "authors": "Luke Fenton-Glynn, Hanti Lin, Eugene Y. S. Chua, Bert Baumgaertner, Sven Neth, Alexander Meehan, Snow Zhang",
@@ -1332,7 +1332,7 @@
     "format": "In-Person Presentation",
     "subs": "Circular Spaces and Privileged Times|Is the Holographic Principle a Principle of Quantum Gravity? |Energy Conditions in Theories of Modified Gravity|How to Make Presentism Consistent with Special Relativity|No Time for Time from No-Time|Suppressing Spacetime Emergence",
     "authors": "Craig Callender, Chris Arledge, Mark Balaguer, Ann C Thresher, Helen Meskhidze, Joshua Norton",
-    "moderator": "Ed Slowik"
+    "moderator": "Edward Slowik"
   },
   {
     "id": 103,
@@ -1390,8 +1390,8 @@
     "track": "Philosophy of Biology - evolution",
     "venue": "Key Ballroom 02",
     "format": "Hybrid Presentation",
-    "subs": "How to Think About Homology: History vs Kinds|The Epistemic Value of the Living Fossils Concept|The Ecological Dimension of Natural Selection|What Are the ‘Levels’ in Levels of Selection?|The Emptiness of Species|",
-    "authors": "Markus Eronen, Aja Watkins, Bendik Hellem Aaby, Grant Ramsey, Robert Kok, Derek Skillings",
+    "subs": "How to Think About Homology: History vs Kinds|The Epistemic Value of the Living Fossils Concept|What Are the ‘Levels’ in Levels of Selection?|The Emptiness of Species||",
+    "authors": "Markus Eronen, Aja Watkins, Grant Ramsey, Robert Kok, Derek Skillings",
     "moderator": ""
   },
   {
@@ -1422,7 +1422,7 @@
     "format": "Hybrid Presentation",
     "subs": "Nomic Vagueness|The Metaphysics of Chaos Theory|A Principle Explanation of Bell State Entanglement: Conservation per No Preferred Reference Frame|Non-Empirical Physics, String Theory, and Minimal Criteria|Infrared Cancellation and Measurement|",
     "authors": "W.M. Stuckey, Brett Park, Pablo Ruiz de Olano, Michael Miller, Eddy Keming Chen",
-    "moderator": ""
+    "moderator": "Esat Canberk  Özçelik"
   },
   {
     "id": 110,
@@ -1491,10 +1491,10 @@
     "date": "2021-11-11",
     "start": "8:30:00",
     "end": "10:00:00",
-    "abstract": "<p dir=\"ltr\">Work in the field of philosophy of technology overlaps with the philosophy science upon multiple points of study. Perhaps the most straightforward of these is the topic of scientific instrumentation. Philosophers of technology study laboratory instrumentation through a variety of perspectives, approaching the epistemological, material, practical, and embodied aspects of these devices along multiple trajectories. Participants in our panel address the concrete details of these devices-from neuroscientific brain stimulation, to Landsat images of Earth, to Hubble images of Mars-and their roles in scientific investigation. Scholars in this particular panel bring insights from both the phenomenological and American pragmatic schools of thought.</p><p dir=\"ltr\"> The panel also serves as a celebration of recent books published in the book series \"Postphenomenology and the Philosophy of Technology.\" The presenters on this panel are authors or editors of books that are forthcoming or have been published over the past year. They include Bas de Boer's monograph How Scientific Instruments Speak: Postphenomenology and Technological Mediations in Neuroscientific Practice, Samantha J. Fried and Robert Rosenberger's collection Postphenomenology and Imaging: How to Read Technology, and Andrew Wells Garnar and Ashley Shew's Feedback Loops: Pragmatism about Science and Technology, a festschrift on the work of Joe Pitt. </p>",
+    "abstract": "<p dir=\"ltr\">Work in the field of philosophy of technology overlaps with the philosophy science upon multiple points of study. Perhaps the most straightforward of these is the topic of scientific instrumentation. Philosophers of technology study laboratory instrumentation through a variety of perspectives, approaching the epistemological, material, practical, and embodied aspects of these devices along multiple trajectories. Participants in our panel address the concrete details of these devices-from neuroscientific brain stimulation, to Landsat images of Earth, to Hubble images of Mars-and their roles in scientific investigation. Scholars in this particular panel bring insights from both the phenomenological and American pragmatic schools of thought.</p><p dir=\"ltr\">The panel also serves as a celebration of recent books published in the book series \"Postphenomenology and the Philosophy of Technology.\" The presenters on this panel are authors or editors of books that are forthcoming or have been published over the past year. They include Bas de Boer's monograph How Scientific Instruments Speak: Postphenomenology and Technological Mediations in Neuroscientific Practice, Samantha J. Fried and Robert Rosenberger's collection Postphenomenology and Imaging: How to Read Technology, and Andrew Wells Garnar and Ashley Shew's Feedback Loops: Pragmatism about Science and Technology, a festschrift on the work of Joe Pitt.</p>",
     "track": "Philosophy of Technology",
-    "venue": "Key Ballroom 03",
-    "format": "Hybrid Presentation",
+    "venue": "",
+    "format": "Remote Presentation",
     "subs": "Philosophy of Technology as a Hyperspace Transmogrifier|How Scientific Instruments Speak: Technological Mediations in Neuroscientific Practice|On the Multistability of Images in Science:   Examples from Neurobiological and Planetary Imaging |||",
     "authors": "Ashley Shew, Andrew Garnar, Bas de Boer, Samantha Fried, Robert Rosenberger",
     "moderator": "Kirk Besmer"
@@ -1598,11 +1598,11 @@
     "end": "11:45:00",
     "abstract": "<p>Nature of Science and the Communication of Biopolitics</p><p dir=\"ltr\">During the COVID-19 crisis, unfortunately in most cases, both mainstream media and social media have reproduced one way of thinking: a politicized scientism. Science in all areas of research is characterized by open dialogue, conflicting arguments and multiple approaches in solving scientific problems. This image of science has disappeared from the public awareness for almost two years now. </p><p dir=\"ltr\">In the first paper of this symposium, an analysis of a series of on line videos and the comments that follow them as well as a variety of published on line articles where politicians, scientists and citizens present their ideas about the COVID-19 crisis is being presented. Results show that certain sequences in the structure of language and arguments concerning the aspects of the nature of science are present in the way politicians, scientists and citizens present their approach towards the COVID-19 crisis. </p><p dir=\"ltr\">On the one hand, those supporting the biopolitically accepted as correct agenda present minimum nature of the science content in their arguments, while completely miss the synthetic nature of science as a product and the nature of the evolution and the methodologies of science. Nevertheless, they overemphasize on elements concerning the nature of the science context and the interrelations between science and society that impose demands on scientific research and development coming from power centers and power figures of modern society, having a result on spreading bio-biased attitudes to the community. </p><p dir=\"ltr\">On the other hand, scientists and citizens engaged in public on line dialogues, present high input of the nature of the science content, of the synthetic nature of science as a product and of the nature of the evolution and the methodologies of science. In this case, the nature of the science context and the nature of the interrelations between science and society are brought forward in order to express the suppression of theories and research results that disagree with the biopolitically accepted as correct agenda to the extent of science being censored, while bioethics arguments point out the necessity of discussing about the nature of attitudes and values expressed though and fostered by science. </p><p dir=\"ltr\">In the second paper of the symposium, the case of Sweden is discussed. The Swedish authorities have referred heavily to 'evidence' and 'lack of evidence' when motivating the use or non-use of different regulations. For example, the Swedish state epidemiologist for a long time argued against the use of masks by the general public, due to lack of evidence of its usefulness to prevent the spreading of the COVID-19 virus. </p><p dir=\"ltr\">The reference to evidence/lack of evidence has been praised as well as criticized in the general debate involving the general public, politicians as well as scientists. The relationship between policy decisions and scientific knowledge is always complex. </p><p dir=\"ltr\">The debate on what actions should be taken in relation to COVID-19 would benefit from scientists, policy stakeholders, politicians and the general public clarifying pros and cons, risks and benefits, and the values guiding the choices between different possible actions. In addition, in issues such as what actions to take in relation to the COVID-19 virus, the situation is even more complex since \"how the world 'is'\" is subject to ongoing research – the evidence is not clear, nor is there agreement on what counts as evidence, or what constitutes reasonable evidence requirements. </p><p dir=\"ltr\">The paper suggests that science education should learn from the ongoing pandemic and reconsider simplistic notions of 'evidence' and 'investigations' described in secondary science textbooks, where processes of science are described as formulating a hypothesis, planning and performing an investigation and drawing conclusions, while 'messy' research processes and the nature of ongoing research are often left out. In addition, the relationship between ongoing research, evidence, and policy decisions should be discussed in more detail than what is usually the case, due to its importance for citizenship and everyday life. </p><p dir=\"ltr\">The third paper of the symposium discusses the fact that many individuals and students in particular, often do not have the tools to discern quality scientific information from tentative or poor quality information. They often fail to recognize pseudoscience, false information, or propaganda. Therefore, key foundational pedagogical concepts that are needed to develop the ability to evaluate scientific information are proposed such as: a) how inductive, deductive, and abductive reasoning work together to build scientific knowledge, b) how one can categorize types of scientific knowledge based on their tentativeness, c) how argument and evidence are codified by citations and referencing, d) how peer-review, publishing, and review articles are crucial in developing scientific consensus and e) how to find and access quality science information.</p><p dir=\"ltr\">In the fourth paper of this symposium, the discussion focuses on the demand from society towards science education researchers to make proposals for digital educational material and teaching strategies that would help teachers understand and then be able to help their students learn what a virus triggered disease is and what medical research has to offer to tackle it. </p><p dir=\"ltr\">The need for a logical, distant from the current moment, objective approach and presentation in digital narratives created about diseases, their medicines and their vaccines, is presented coupled with the challenge designers and developers of digital narratives face to make an emotional over-ride, that is to find one or more tricks or perspectives that distract the audience from getting too emotionally involved. </p><p dir=\"ltr\">A digital narrative is presented in this paper that has been created based on history of science and history of medicine about diseases and attempts to point out elements of the nature of science about disease and treatment. </p><p dir=\"ltr\">The analysis of research data coming from interviews with teachers and students shows the impact of the developed digital narrative and opens the discussion on the educational demands of teachers and students for digital educational material and teaching approaches about diseases, medicines and vaccines especially in the current times when digital science narratives contribute to the on-line spread of information to citizens.</p><p dir=\"ltr\">In the fifth paper of this symposium, attention is brought to the importance to identify what content is privileged around health and disease in science curricula, in the context of the COVID-19 pandemic, pointing out the urgent task to help science teachers move from information to knowledge enabling action, exploring a multi-causal and multi-referential approach conveyed through narratives. The potential of the narrative format is examined in order to provide context, information and relations for students to explain aspects of pandemics from the past, present and future. </p><p dir=\"ltr\">Current education seems in competition with circulation of information facilitated by new technologies. The problem is that this \"non-processed\" information serves for little more than being used in non-productive ways. </p><p dir=\"ltr\">In this scenario, how can schools take profit of their position in society? </p><p dir=\"ltr\">Is school science preparing students to understand the links between ecosystemic degradation and the emergence of SARS-CoV-2? </p><p dir=\"ltr\">How can \"standard\" scientific content cope with socio-scientific issues such as whether \"generalist\" preventive measures are applicable in complex and sensitive contexts? </p><p dir=\"ltr\">What is the robustness of these \"epistemic\" operations based on a list of biomedical data on COVID-19? </p><p dir=\"ltr\">The paper examines the potential of scientific narratives to provide context, information and relations necessary for students to explain through theoretical models key aspects of pandemics aligning with the incorporation of an \"integrated view\" into school science and using narratives as a powerful vehicle to implement it in science classrooms.</p>",
     "track": "",
-    "venue": "Key Ballroom 03",
-    "format": "Hybrid Presentation",
+    "venue": "",
+    "format": "Remote Presentation",
     "subs": "Nature of Science in the Public Discussion between Politicians, Scientists and Citizens in the Era of Biopolitics|The Notion of Evidence in Policy Discourse on Covid19 – Implications for Science Education|Key Pedagogical Concepts for Teaching Students about Scientific Knowledge |Multi-Referential Narratives on Epidemics as a Tool for Critical Science Education|Creating Digital Narratives for Science Education about Diseases, Medicines and Vaccines|",
     "authors": "Fanny Seroglou, Lena Hansson, Lori Maramante, Agustín Adúriz-Bravo, Anna Letsi",
-    "moderator": "Lori Maramante"
+    "moderator": "Fanny Seroglou"
   },
   {
     "id": 123,
@@ -1676,7 +1676,7 @@
     "venue": "Key Ballroom South Foyer",
     "format": "",
     "subs": "",
-    "authors": "Eugene Vaynberg, Yafeng Shan, Travis LaCroix, Chia-Hua Lin, Dr. Julia Bursten, Sabina Leonelli, Thomas Reydon, David Kinney, Catherine Herfeld, Jennifer Jhun, Collin Rice, Areins Pelayo, Paul Hoyningen-Huene, Natalia Carrillo-Escalera, Michael Stoeltzner, Janella Baxter, Marina DiMarco, Katherine Valde, John Bickle, Laura Cupples, Kayoung Kim, Christopher ChoGlueck, Alan Love, Alison Springle, Nora Boyd, Yoshinari Yoshida, Dan Li, Jan Pieter Konsman, Patrick Klösel, Carl Brusse, Shannon Abelson, Sara Al-Sayed, Vitaly Pronskikh, Adam Krashniak, Ananya Chattoraj, Aaron Mascarenhas, Aja Watkins, Michael Hicks, Hugh Desmond, Andrew Evans, Katie Morrow, Emily Parke, Derek Halm, Tom Wysocki, Chanwoo Lee, Amanda Corris, Joshua May, Dragana Bozin, Aleta Quinn, Donal Khosrowi, Jonathon Abdal, Archie Fields III, Brandon Boesch, Craig Fox, Yuval Abrams, Trey Boone, Alexander Meehan, Aida Roige, Bixin Guo, Siska De Baerdemaeker, Steven Peck, Samuel Maia, Stefano Canali, María Ferreira Ruiz, Dr. Jorge Morales, Marc Ereshefsky, Deniz Sarikaya, Simon Blessenohl, Milla Lifke, TJ Perkins, Dr. Ashton Sperry, Nuhu Osman Attah, Caitlin Mace, Juan Ardila-Cifuentes, Yael Friedman, Cory Wright, William O'Shea, Samantha Hirshland, Martin Zach, Zina Ward, Lauren Wilson, Stephen Perry, Nadia Ruiz, Antonio Danese, Özlem Yilmaz, Darcy McCusker, Mr. Thomas Durlacher, Myron A Penner, Amanda Nichols, Evan Arnet, Siyu Yao, Megan Kelly, Neal Anderson, Matthew A. Turner, Soyeong An, Daniel Molter, Kevin Ortiz Ceballos, Romy Vekony, GE FANG, Wesley Buckwalter, Alex Mathie, James Marcum, Rebecca Korf, Janet Stemwedel, Dana Matthiessen, James Justus, Nick Byrd, James Griesemer, Tuula Klaavuniemi, Nathan Gabriel, Alican Basdemir, Sophia Crüwell, Margaret Farrell, Gray O'Reilly, Jennifer Whyte, Chelsie Greenlee, Bruce Rushing, Tim Elmo Feiten",
+    "authors": "Eugene Vaynberg, Yafeng Shan, Travis LaCroix, Chia-Hua Lin, Dr. Julia Bursten, Sabina Leonelli, Thomas Reydon, David Kinney, Catherine Herfeld, Jennifer Jhun, Collin Rice, Areins Pelayo, Paul Hoyningen-Huene, Natalia Carrillo-Escalera, Michael Stoeltzner, Janella Baxter, Marina DiMarco, Katherine Valde, John Bickle, Laura Cupples, Kayoung Kim, Christopher ChoGlueck, Alan Love, Alison Springle, Nora Boyd, Yoshinari Yoshida, Dan Li, Jan Pieter Konsman, Patrick Klösel, Carl Brusse, Samantha Wakil, Shannon Abelson, Sara Al-Sayed, Vitaly Pronskikh, Adam Krashniak, Ananya Chattoraj, Aja Watkins, Michael Hicks, Hugh Desmond, Andrew Evans, Katie Morrow, Emily Parke, Derek Halm, Tom Wysocki, Chanwoo Lee, Amanda Corris, Joshua May, Dragana Bozin, Aleta Quinn, Donal Khosrowi, Jonathon Abdal, Archie Fields III, Brandon Boesch, Craig Fox, Yuval Abrams, Trey Boone, Alexander Meehan, Aida Roige, Bixin Guo, Siska De Baerdemaeker, Steven Peck, Stefano Canali, María Ferreira Ruiz, Dr. Jorge Morales, Deniz Sarikaya, Simon Blessenohl, Milla Lifke, TJ Perkins, Dr. Ashton Sperry, Nuhu Osman Attah, Caitlin Mace, Juan Ardila-Cifuentes, Yael Friedman, Cory Wright, William O'Shea, Samantha Hirshland, Martin Zach, Zina Ward, Lauren Wilson, Stephen Perry, Nadia Ruiz, Antonio Danese, Özlem Yilmaz, Darcy McCusker, Mr. Thomas Durlacher, Myron A Penner, Amanda Nichols, Evan Arnet, Siyu Yao, Megan Kelly, Neal Anderson, Matthew A. Turner, Soyeong An, Daniel Molter, Kevin Ortiz Ceballos, Romy Vekony, GE FANG, Wesley Buckwalter, Alex Mathie, James Marcum, Rebecca Korf, Janet Stemwedel, Dana Matthiessen, James Justus, Nick Byrd, James Griesemer, Tuula Klaavuniemi, Nathan Gabriel, Alican Basdemir, Sophia Crüwell, Margaret Farrell, Gray O'Reilly, Jennifer Whyte, Chelsie Greeenlee, Bruce Rushing, Tim Elmo Feiten",
     "moderator": ""
   },
   {
@@ -1841,7 +1841,22 @@
     "venue": "Key Ballroom 11",
     "format": "Hybrid Presentation",
     "subs": "",
-    "authors": "federica bocchi, Jingyi Wu, Azita Chellappoo",
+    "authors": "Federica Bocchi, Jingyi Wu, Azita Chellappoo",
     "moderator": "Jennifer McDonald"
+  },
+  {
+    "id": 147,
+    "type": "Session",
+    "name": "Probability and Statistics II",
+    "date": "2021-11-12",
+    "start": "10:45:00",
+    "end": "12:15:00",
+    "abstract": "",
+    "track": "",
+    "venue": "Key Ballroom 07-08",
+    "format": "",
+    "subs": "",
+    "authors": "",
+    "moderator": ""
   }
 ]
