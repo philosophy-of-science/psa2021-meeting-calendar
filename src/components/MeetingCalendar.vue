@@ -69,6 +69,7 @@
             :events="events"
             :first-interval="15"
             :interval-minutes="30"
+            :interval-count="28"
             :weekdays="[1, 2, 3, 4, 5, 6, 0]"
             @click:event="showEvent"
             :event-overlap-mode="mode"
